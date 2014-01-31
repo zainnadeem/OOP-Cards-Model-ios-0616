@@ -5,4 +5,4 @@ before_install:
   - brew remove xctool
   - brew install xctool
 
-script: xctool -reporter pretty -project OOP-Cards.xcodeproj -sdk iphonesimulator7.0 -scheme OOP-Cards build test
+script: xctool -reporter pretty -project OOP-Cards-Model.xcodeproj -sdk iphonesimulator7.0 -scheme OOP-Cards-Model build test
