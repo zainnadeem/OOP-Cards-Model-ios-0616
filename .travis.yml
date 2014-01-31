@@ -1,0 +1,8 @@
+language: objective-c
+
+before_install: 
+  - brew update
+  - brew remove xctool
+  - brew install xctool
+
+script: xctool -reporter pretty -project OOP-Cards.xcodeproj -sdk iphonesimulator7.0 -scheme OOP-Cards build test
