@@ -39,7 +39,8 @@ Object Oriented Card Game
 
 5.    Implement the description method for the PlayingCard and BaseballCard classes.  
       playingCard.description 
-      should return rank and suit (copy and paste these ASCII representations of hearts ♥, spades ♠ ,clubs ♣️ and diamonds ♦️). 
+      should return rank and suit (copy and paste these ASCII representations of hearts ♥, spades ♠ ,clubs ♣, and diamonds ♦).
+
       [baseballCard description] 
       should return the players firstName lastName and teamName 
 
