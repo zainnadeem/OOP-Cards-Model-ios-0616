@@ -50,7 +50,7 @@ Object Oriented Card Game
 
 ### Extra Credit
 
-1. Add designated initializers to the PlayingCard and BaseballCard classes and refactor your initializations (in didFinishLaunchingWithOptions) to use designated initializers rather than setters.
+1. Add designated initializers to the PlayingCard, BaseballPlayer and BaseballCard classes and refactor your initializations (in didFinishLaunchingWithOptions) to use designated initializers rather than setters.
 2.  In the playing card class add 2 private methods, 
     - (BOOL)validRank:(NSNumber *)rank 
     and 
