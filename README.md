@@ -39,8 +39,8 @@ Object Oriented Card Game
 
 5.    Implement the description method for the PlayingCard and BaseballCard classes.  
       playingCard.description 
-      should return rank and suit (use the ASCII character representations of hearts ♥, spades ♠ ,c clubs nd diamonds). 
-      baseballCard.description 
+      should return rank and suit (copy and paste these ASCII representations of hearts ♥, spades ♠ ,clubs ♣️ and diamonds ♦️). 
+      [baseballCard description] 
       should return the players firstName lastName and teamName 
 
 6.    Inside of AppDelegate.m's didFinishLaunchingWithOptions method, instantiate 3 playing cards, 3 baseball cards and 2 baseball players.  2 of your baseball cards should share the same baseball player. 
