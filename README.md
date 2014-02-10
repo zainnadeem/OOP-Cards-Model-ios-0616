@@ -18,7 +18,6 @@ Object Oriented Card Game
 
 2. Cards have many distinguishing characteristics or /* hint */ properties.  Here are a few that you need to include in your classes.  Think about which characteristics belong to all cards and which belong to a PlayingCard or BaseballCard.  
     *  **playerWeight** (Integer) - The player's weight in pounds
-    *  **description** (String) - A written description of the cards contents 
     *  **suit** (String) - The card's suit 
     *  **playerNumber** (Integer) - The player's number 
     *  **rank** (Integer) - The cards rank.  ex. 4 of clubs has a rank of 4  
@@ -38,9 +37,9 @@ Object Oriented Card Game
 	  * Move all of the properties related to a baseball player out of the card class and into your newly created BaseballPlayer's public interface
 	  * Create a property of type BaseballPlayer in the PlayingCard class (if the compiler is complaining, you likely forgot to #import the BaseballPlayer class)
 
-5.    Implement the description property for the PlayingCard and BaseballCard classes.  
+5.    Implement the description method for the PlayingCard and BaseballCard classes.  
       playingCard.description 
-      should return rank and suit (use the ASCII character representations of hearts, spades, clubs and diamonds). 
+      should return rank and suit (use the ASCII character representations of hearts ♥, spades ♠ ,c clubs nd diamonds). 
       baseballCard.description 
       should return the players firstName lastName and teamName 
 
