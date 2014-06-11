@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		404F75B720B2496BAE31D058 /* libPods-OOP-Cards-ModelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19591EEAF47649EEA6965847 /* libPods-OOP-Cards-ModelTests.a */; };
 		44CFDE96189C389300238AA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE95189C389300238AA4 /* Foundation.framework */; };
 		44CFDE98189C389300238AA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE97189C389300238AA4 /* CoreGraphics.framework */; };
 		44CFDE9A189C389300238AA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE99189C389300238AA4 /* UIKit.framework */; };
@@ -18,10 +19,10 @@
 		44CFDEB0189C389300238AA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE95189C389300238AA4 /* Foundation.framework */; };
 		44CFDEB1189C389300238AA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE99189C389300238AA4 /* UIKit.framework */; };
 		44CFDEB9189C389300238AA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44CFDEB7189C389300238AA4 /* InfoPlist.strings */; };
-		44CFDEC8189C391800238AA4 /* BaseballCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFDEC4189C391800238AA4 /* BaseballCardTests.m */; };
-		44CFDEC9189C391800238AA4 /* BaseballPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFDEC5189C391800238AA4 /* BaseballPlayerTests.m */; };
-		44CFDECA189C391800238AA4 /* CardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFDEC6189C391800238AA4 /* CardTests.m */; };
-		44CFDECB189C391800238AA4 /* PlayingCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFDEC7189C391800238AA4 /* PlayingCardTests.m */; };
+		722736761948E278002A8E6A /* BaseballCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736721948E278002A8E6A /* BaseballCardSpec.m */; };
+		722736771948E278002A8E6A /* BaseballPlayerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736731948E278002A8E6A /* BaseballPlayerSpec.m */; };
+		722736781948E278002A8E6A /* CardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736741948E278002A8E6A /* CardSpec.m */; };
+		722736791948E278002A8E6A /* PlayingCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736751948E278002A8E6A /* PlayingCardSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19591EEAF47649EEA6965847 /* libPods-OOP-Cards-ModelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OOP-Cards-ModelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CFDE92189C389300238AA4 /* OOP-Cards-Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OOP-Cards-Model.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CFDE95189C389300238AA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44CFDE97189C389300238AA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,10 +52,11 @@
 		44CFDEAE189C389300238AA4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		44CFDEB6189C389300238AA4 /* OOP-Cards-ModelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OOP-Cards-ModelTests-Info.plist"; sourceTree = "<group>"; };
 		44CFDEB8189C389300238AA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		44CFDEC4189C391800238AA4 /* BaseballCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballCardTests.m; sourceTree = "<group>"; };
-		44CFDEC5189C391800238AA4 /* BaseballPlayerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballPlayerTests.m; sourceTree = "<group>"; };
-		44CFDEC6189C391800238AA4 /* CardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTests.m; sourceTree = "<group>"; };
-		44CFDEC7189C391800238AA4 /* PlayingCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardTests.m; sourceTree = "<group>"; };
+		722736721948E278002A8E6A /* BaseballCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballCardSpec.m; sourceTree = "<group>"; };
+		722736731948E278002A8E6A /* BaseballPlayerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballPlayerSpec.m; sourceTree = "<group>"; };
+		722736741948E278002A8E6A /* CardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardSpec.m; sourceTree = "<group>"; };
+		722736751948E278002A8E6A /* PlayingCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardSpec.m; sourceTree = "<group>"; };
+		9859256E0D86445388B07094 /* Pods-OOP-Cards-ModelTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OOP-Cards-ModelTests.xcconfig"; path = "Pods/Pods-OOP-Cards-ModelTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,7 @@
 				44CFDEAF189C389300238AA4 /* XCTest.framework in Frameworks */,
 				44CFDEB1189C389300238AA4 /* UIKit.framework in Frameworks */,
 				44CFDEB0189C389300238AA4 /* Foundation.framework in Frameworks */,
+				404F75B720B2496BAE31D058 /* libPods-OOP-Cards-ModelTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +91,7 @@
 				44CFDEB4189C389300238AA4 /* OOP-Cards-ModelTests */,
 				44CFDE94189C389300238AA4 /* Frameworks */,
 				44CFDE93189C389300238AA4 /* Products */,
+				9859256E0D86445388B07094 /* Pods-OOP-Cards-ModelTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +111,7 @@
 				44CFDE97189C389300238AA4 /* CoreGraphics.framework */,
 				44CFDE99189C389300238AA4 /* UIKit.framework */,
 				44CFDEAE189C389300238AA4 /* XCTest.framework */,
+				19591EEAF47649EEA6965847 /* libPods-OOP-Cards-ModelTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,10 +141,10 @@
 		44CFDEB4189C389300238AA4 /* OOP-Cards-ModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				44CFDEC6189C391800238AA4 /* CardTests.m */,
-				44CFDEC4189C391800238AA4 /* BaseballCardTests.m */,
-				44CFDEC5189C391800238AA4 /* BaseballPlayerTests.m */,
-				44CFDEC7189C391800238AA4 /* PlayingCardTests.m */,
+				722736721948E278002A8E6A /* BaseballCardSpec.m */,
+				722736731948E278002A8E6A /* BaseballPlayerSpec.m */,
+				722736741948E278002A8E6A /* CardSpec.m */,
+				722736751948E278002A8E6A /* PlayingCardSpec.m */,
 				44CFDEB5189C389300238AA4 /* Supporting Files */,
 			);
 			path = "OOP-Cards-ModelTests";
@@ -177,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44CFDEC1189C389300238AA4 /* Build configuration list for PBXNativeTarget "OOP-Cards-ModelTests" */;
 			buildPhases = (
+				AB510BAFC1254AE197BD34B6 /* Check Pods Manifest.lock */,
 				44CFDEA9189C389300238AA4 /* Sources */,
 				44CFDEAA189C389300238AA4 /* Frameworks */,
 				44CFDEAB189C389300238AA4 /* Resources */,
+				606AACCCCC754F0FA7A08CB7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +251,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		606AACCCCC754F0FA7A08CB7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-OOP-Cards-ModelTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB510BAFC1254AE197BD34B6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44CFDE8E189C389300238AA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -257,10 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44CFDEC9189C391800238AA4 /* BaseballPlayerTests.m in Sources */,
-				44CFDECA189C391800238AA4 /* CardTests.m in Sources */,
-				44CFDECB189C391800238AA4 /* PlayingCardTests.m in Sources */,
-				44CFDEC8189C391800238AA4 /* BaseballCardTests.m in Sources */,
+				722736761948E278002A8E6A /* BaseballCardSpec.m in Sources */,
+				722736791948E278002A8E6A /* PlayingCardSpec.m in Sources */,
+				722736781948E278002A8E6A /* CardSpec.m in Sources */,
+				722736771948E278002A8E6A /* BaseballPlayerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +435,7 @@
 		};
 		44CFDEC2189C389300238AA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9859256E0D86445388B07094 /* Pods-OOP-Cards-ModelTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OOP-Cards-Model.app/OOP-Cards-Model";
@@ -417,6 +459,7 @@
 		};
 		44CFDEC3189C389300238AA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9859256E0D86445388B07094 /* Pods-OOP-Cards-ModelTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OOP-Cards-Model.app/OOP-Cards-Model";
@@ -453,6 +496,7 @@
 				44CFDEC0189C389300238AA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44CFDEC1189C389300238AA4 /* Build configuration list for PBXNativeTarget "OOP-Cards-ModelTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +505,7 @@
 				44CFDEC3189C389300238AA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
