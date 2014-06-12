@@ -1,8 +1,10 @@
 language: objective-c
 
-before_install: 
+before_install:
   - brew update
-  - brew remove xctool
-  - brew install xctool
+  - brew upgrade xctool
+  
+notifications:
+  webhooks: http://progress.flatironschool.com/submissions
 
-script: xctool -reporter pretty -project OOP-Cards-Model.xcodeproj -sdk iphonesimulator7.0 -scheme OOP-Cards-Model build test
+script: xctool -reporter json-stream -workspace OOP-Cards-Model/OOP-Cards-Model.xcworkspace -sdk iphonesimulator -scheme OOP-Cards-Model build test
