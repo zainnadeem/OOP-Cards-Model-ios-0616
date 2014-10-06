@@ -37,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		19591EEAF47649EEA6965847 /* libPods-OOP-Cards-ModelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OOP-Cards-ModelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F92936DC853F56AA293AF18 /* Pods-OOP-Cards-ModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OOP-Cards-ModelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OOP-Cards-ModelTests/Pods-OOP-Cards-ModelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		44CFDE92189C389300238AA4 /* OOP-Cards-Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OOP-Cards-Model.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CFDE95189C389300238AA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44CFDE97189C389300238AA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,11 +53,11 @@
 		44CFDEAE189C389300238AA4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		44CFDEB6189C389300238AA4 /* OOP-Cards-ModelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OOP-Cards-ModelTests-Info.plist"; sourceTree = "<group>"; };
 		44CFDEB8189C389300238AA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4AE18893FF788BC760F5798D /* Pods-OOP-Cards-ModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OOP-Cards-ModelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OOP-Cards-ModelTests/Pods-OOP-Cards-ModelTests.release.xcconfig"; sourceTree = "<group>"; };
 		722736721948E278002A8E6A /* BaseballCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballCardSpec.m; sourceTree = "<group>"; };
 		722736731948E278002A8E6A /* BaseballPlayerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballPlayerSpec.m; sourceTree = "<group>"; };
 		722736741948E278002A8E6A /* CardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardSpec.m; sourceTree = "<group>"; };
 		722736751948E278002A8E6A /* PlayingCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardSpec.m; sourceTree = "<group>"; };
-		9859256E0D86445388B07094 /* Pods-OOP-Cards-ModelTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OOP-Cards-ModelTests.xcconfig"; path = "Pods/Pods-OOP-Cards-ModelTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E6982BD89252419E5F125BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F92936DC853F56AA293AF18 /* Pods-OOP-Cards-ModelTests.debug.xcconfig */,
+				4AE18893FF788BC760F5798D /* Pods-OOP-Cards-ModelTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		44CFDE89189C389300238AA4 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +101,7 @@
 				44CFDEB4189C389300238AA4 /* OOP-Cards-ModelTests */,
 				44CFDE94189C389300238AA4 /* Frameworks */,
 				44CFDE93189C389300238AA4 /* Products */,
-				9859256E0D86445388B07094 /* Pods-OOP-Cards-ModelTests.xcconfig */,
+				0E6982BD89252419E5F125BA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,7 +274,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-OOP-Cards-ModelTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OOP-Cards-ModelTests/Pods-OOP-Cards-ModelTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AB510BAFC1254AE197BD34B6 /* Check Pods Manifest.lock */ = {
@@ -435,7 +445,7 @@
 		};
 		44CFDEC2189C389300238AA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9859256E0D86445388B07094 /* Pods-OOP-Cards-ModelTests.xcconfig */;
+			baseConfigurationReference = 1F92936DC853F56AA293AF18 /* Pods-OOP-Cards-ModelTests.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OOP-Cards-Model.app/OOP-Cards-Model";
@@ -459,7 +469,7 @@
 		};
 		44CFDEC3189C389300238AA4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9859256E0D86445388B07094 /* Pods-OOP-Cards-ModelTests.xcconfig */;
+			baseConfigurationReference = 4AE18893FF788BC760F5798D /* Pods-OOP-Cards-ModelTests.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OOP-Cards-Model.app/OOP-Cards-Model";

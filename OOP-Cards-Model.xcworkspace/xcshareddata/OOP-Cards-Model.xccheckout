@@ -10,29 +10,29 @@
 	<string>OOP-Cards-Model</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>52171FCA-3294-43CD-A851-2033FCDF4CFE</key>
+		<key>641FD5DEDEB94195E97C4944DB777CF40D6E2963</key>
 		<string>ssh://github.com/flatiron-school-curriculum/OOP-Cards-Model.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>OOP-Cards-Model.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>52171FCA-3294-43CD-A851-2033FCDF4CFE</key>
+		<key>641FD5DEDEB94195E97C4944DB777CF40D6E2963</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/flatiron-school-curriculum/OOP-Cards-Model.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>52171FCA-3294-43CD-A851-2033FCDF4CFE</string>
+	<string>641FD5DEDEB94195E97C4944DB777CF40D6E2963</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>52171FCA-3294-43CD-A851-2033FCDF4CFE</string>
+			<string>641FD5DEDEB94195E97C4944DB777CF40D6E2963</string>
 			<key>IDESourceControlWCCName</key>
 			<string>OOP-Cards-Model</string>
 		</dict>
