@@ -1,12 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
 # Uncomment this line to define a global platform for your project
 # platform :ios, "6.0"
+
 
 target "OOP-Cards-Model" do
 
 end
 
 target "OOP-Cards-ModelTests" do
-  pod 'Specta',      '~> 0.2.1'                                                 
+  pod 'Specta',     :git=>'git@github.com:specta/specta.git', :commit=>'93e4eac3fc31e0539261ae2fb633cae7e6b93b33' 
 
   pod 'Expecta',     '~> 0.2.4'                                                 
 
