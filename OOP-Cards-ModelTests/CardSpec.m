@@ -38,6 +38,24 @@ describe(@"Card", ^{
         });
     });
     
+    describe(@"frame", ^{
+        it(@"should return a null frame", ^{
+            expect(card.frame).to.beNil;
+        });
+    });
+    
+    describe(@"flipCard", ^{
+        it(@"should flip the card to be face down if it is face up", ^{
+            card.isFaceUp = YES;
+            expect([card flipCard]).to.equal(0);
+        });
+        
+        it(@"should flip the card to be face up if it is face down", ^{
+            card.isFaceUp = NO;
+            expect([card flipCard]).to.equal(1);
+        });
+    });
+    
 });
 
 SpecEnd
