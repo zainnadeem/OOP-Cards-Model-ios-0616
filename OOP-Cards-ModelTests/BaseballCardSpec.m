@@ -113,7 +113,7 @@ describe(@"BaseballCard", ^{
         });
         
         it(@"should have the isFaceUp value I set it to",^{
-            card.isFaceUp = NO;
+            card.faceUp = NO;
             expect(card.isFaceUp).to.beFalsy();
         });
     });

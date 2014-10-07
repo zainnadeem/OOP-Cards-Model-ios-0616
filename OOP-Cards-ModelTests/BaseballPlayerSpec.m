@@ -18,7 +18,7 @@ SpecBegin(BaseballPlayer)
 describe(@"BaseballPlayer", ^{
     __block BaseballPlayer *player;
     
-    beforeAll(^{
+    beforeEach(^{
         player = [[BaseballPlayer alloc] initWithFirstName:@"Hank" lastName:@"Aaron" weight:@180 number:@44 height:@72];
     });
     

@@ -33,7 +33,8 @@ describe(@"Card", ^{
     });
     
     describe(@"isFaceUp", ^{
-        it(@"should return YES if the card is collectible",^{
+        it(@"should return YES if the card is face up",^{
+
             expect(card.isFaceUp).to.equal(0);
         });
     });
@@ -46,13 +47,15 @@ describe(@"Card", ^{
     
     describe(@"flipCard", ^{
         it(@"should flip the card to be face down if it is face up", ^{
-            card.isFaceUp = YES;
-            expect([card flipCard]).to.equal(0);
+            card.faceUp = YES;
+            [card flipCard];
+            expect(card.isFaceUp).to.equal(0);
         });
         
         it(@"should flip the card to be face up if it is face down", ^{
-            card.isFaceUp = NO;
-            expect([card flipCard]).to.equal(1);
+            card.faceUp = NO;
+            [card flipCard];
+            expect(card.isFaceUp).to.equal(1);
         });
     });
     
