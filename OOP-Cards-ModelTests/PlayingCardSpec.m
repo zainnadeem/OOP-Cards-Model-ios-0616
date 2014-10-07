@@ -17,7 +17,7 @@ SpecBegin(PlayingCard)
 
 describe(@"PlayingCard", ^{
     __block PlayingCard *myCard;
-    beforeAll(^{
+    beforeEach(^{
         myCard = [[PlayingCard alloc] initWithSuit:@"♠️" rank:@5];
     });
     
@@ -133,7 +133,7 @@ describe(@"PlayingCard", ^{
     
     describe(@"isFaceUp", ^{
         it(@"isFaceUp to return the set value",^{
-            myCard.isFaceUp = YES;
+            myCard.faceUp = YES;
             expect(myCard.isFaceUp).to.beTruthy();
         });
     });
