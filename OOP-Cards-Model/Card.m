@@ -10,9 +10,14 @@
 
 @implementation Card
 
--(NSString *)description
+- (NSString *)description
 {
     return @"";
+}
+
+- (void)flipCard
+{
+    self.faceUp = !self.isFaceUp;
 }
 
 @end

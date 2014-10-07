@@ -10,8 +10,10 @@
 
 @interface Card : NSObject
 
-@property (nonatomic) BOOL isFaceUp;
--(NSString *)description;
+@property (nonatomic, getter=isFaceUp) BOOL FaceUp;
+@property (nonatomic) CGRect frame;
+
+- (NSString *)description;
+- (void)flipCard;
 
 @end
-
