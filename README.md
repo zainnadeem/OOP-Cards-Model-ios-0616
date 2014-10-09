@@ -34,8 +34,8 @@ Object Oriented Card Game
 3.    You may have noticed that many of our properties describe characteristics of a baseball player.  Imagine we have two different baseballCards that each feature the same baseball player. Instead of retyping all of the players information wouldn't it be nice if we could reuse the player information we already entered? 
 
 4.    Let's refactor our code to be more usable by creating a fourth class called BaseballPlayer.
-	  * Move all of the properties related to a baseball player out of the card class and into your newly created BaseballPlayer's public interface
-	  * Create a property of type BaseballPlayer in the PlayingCard class (if the compiler is complaining, you likely forgot to #import the BaseballPlayer class)
+	  * Move all of the properties related to a baseball player out of the BaseballCard class and into your newly created BaseballPlayer's public interface
+	  * Create a property of type BaseballPlayer in the BaseballCard class (if the compiler is complaining, you likely forgot to #import the BaseballPlayer class)
 
 5.    Implement the description method for the PlayingCard and BaseballCard classes.  
       playingCard.description 
