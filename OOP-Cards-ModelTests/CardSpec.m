@@ -39,12 +39,6 @@ describe(@"Card", ^{
         });
     });
     
-    describe(@"frame", ^{
-        it(@"should return a null frame", ^{
-            expect(card.frame).to.beNil;
-        });
-    });
-    
     describe(@"flipCard", ^{
         it(@"should flip the card to be face down if it is face up", ^{
             card.faceUp = YES;
