@@ -13,7 +13,7 @@ Object Oriented Cards
 
 ### Instructions 
 
-1. Create three classes: **Card**, **PlayingCard**, and **BaseballCard**. `Card` will be our base class, and should inherit from `NSObject`.  `PlayingCard` and `BaseballCard` should each inherit from `Card`.  
+1. Create three classes: **Card**, **PlayingCard**, and **BaseballCard**. `Card` will be our base class, and should inherit from `NSObject`.  `PlayingCard` and `BaseballCard` should each inherit from `Card`. (*Shortcut-time! Hit cmd+N, then select 'Cocoa Touch Class'*)
 
 2. Cards have many distinguishing characteristics or (hint) *properties*. Flesh out your classes using this list. Think about which ones belong to all `Card`s, which belong to a `PlayingCard`, and which belong to a `BaseballCard`.  
     *  **playerWeight** (Integer) - The player's weight in pounds
@@ -27,7 +27,7 @@ Object Oriented Cards
     *  **playerLastName** (String) - The last name of the player on the card
     *  **brand** (String) - The brand of the card 
 
-    *Note: it's okay if your `Card` class seems a litttle bare — if applicable, having a basic parent class can be a good design choice because it can make future revisions easier.*
+    *Note: it's okay if your `Card` class seems a little bare — if applicable, having a basic parent class can be a good design choice because it can make future revisions easier.*
 
 3.    You may have noticed that many of our properties describe characteristics of a baseball player...  Imagine we have two different `BaseballCard`s that each feature the same baseball player. Instead of retyping all of the players information, wouldn't it be nice if we could reuse a player we've already entered? 
 
@@ -36,16 +36,18 @@ Object Oriented Cards
 	  * *Don't forget to make the `BaseballPlayer`'s properties public!* Make sure they're in the class's `@interface` in its .h file.
 	  * Create a property of type `BaseballPlayer` in the `BaseballCard` class. [*Pro-tip: if the compiler is complaining, you likely forgot to `#import BaseballPlayer.h;`*]
 
-5.    Implement the `description` method for `PlayingCard` and `BaseballCard` classes.  
-      `[playingCard description]` 
+5.    Override the `description` method for `PlayingCard` and `BaseballCard` classes.  
+      * for `PlayingCard`: 
       should return a string containing its `rank` and `suit` (copy/paste these ASCII representations for the suits: ♥  ♠  ♣  ♦).
 
-      `[baseballCard description]` 
+      * for `BaseballCard`: 
       should return a string containing the players `firstName`, `lastName`, and `teamName`. 
 
 6.    Time to see them in action! Inside of `AppDelegate.m`'s `didFinishLaunchingWithOptions`, instantiate 3 `PlayingCard`s, 3 `baseballCard`s and 2 `BaseballPlayer`s.  2 of your `BaseballCard`s should share the same `BaseballPlayer`. 
 
-7.    Print the `description` of your `BaseballCard`s and `PlayingCard`s to the console using `NSLog`. 
+7.    Print the `description` of your `BaseballCard`s and `PlayingCard`s to the console using `NSLog`.
+
+**Be sure to run the tests too!.**
 
 ### Extra Credit
 
@@ -56,7 +58,3 @@ Object Oriented Cards
     - `(BOOL)validSuit:(NSString *)suit`
 3. Implement `validRank` and `validSuit` such that it is impossible to return any rank not between 1-13 or any suit besides (ASCII hearts, spades, clubs, or diamonds)  
 4. Create methods in the `BaseballPlayer` class that return weight in KG (`NSNumber`) and height in feet and inches (`NSString`)
-
-
-
-
