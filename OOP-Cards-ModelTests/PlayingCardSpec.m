@@ -18,7 +18,7 @@ SpecBegin(PlayingCard)
 describe(@"PlayingCard", ^{
     __block PlayingCard *myCard;
     beforeEach(^{
-        myCard = [[PlayingCard alloc] initWithSuit:@"♠️" rank:@5];
+        myCard = [[PlayingCard alloc] initWithSuit:@"♠" rank:@5];
     });
     
     it(@"exists", ^{
@@ -27,7 +27,7 @@ describe(@"PlayingCard", ^{
     
     describe(@"initWithSuit:Rank:", ^{
         it(@"should have a suit matching what I set it to",^{
-            expect(myCard.suit).to.equal(@"♠️");
+            expect(myCard.suit).to.equal(@"♠");
         });
         
         it(@"should have a rank matching what I set it to",^{
@@ -48,8 +48,8 @@ describe(@"PlayingCard", ^{
     
     describe(@"setSuit", ^{
         it(@"the suit should match the value I set",^{
-            myCard.suit = @"♥️";
-            expect(myCard.suit).to.equal(@"♥️");
+            myCard.suit = @"♥";
+            expect(myCard.suit).to.equal(@"♥");
         });
     });
     
@@ -61,10 +61,10 @@ describe(@"PlayingCard", ^{
     });
     
     describe(@"valid rank with designated initializer", ^{
-        PlayingCard *myValidPlayingCard = [[PlayingCard alloc] initWithSuit:@"♥️"
-                                                                       rank:@13];
-        PlayingCard *myInvalidPlayingCard = [[PlayingCard alloc] initWithSuit:@"♥️"
-                                                                         rank:@14];
+        
+        PlayingCard *myValidPlayingCard = [[PlayingCard alloc] initWithSuit:@"♥" rank:@13];
+        PlayingCard *myInvalidPlayingCard = [[PlayingCard alloc] initWithSuit:@"♥" rank:@14];
+
         it(@"valid ranks should return the value as an NSNumber",^{
             expect(myValidPlayingCard.rank).to.equal(@13);
         });
@@ -99,12 +99,12 @@ describe(@"PlayingCard", ^{
         __block PlayingCard *myInvalidPlayingCard;
         
         beforeAll(^{
-            myValidPlayingCard = [[PlayingCard alloc] initWithSuit:@"♥️" rank:@13];
+            myValidPlayingCard = [[PlayingCard alloc] initWithSuit:@"♥" rank:@13];
             myInvalidPlayingCard = [[PlayingCard alloc] initWithSuit:@"X" rank:@14];
         });
         
         it(@"valid suits should return suit",^{
-            expect(myValidPlayingCard.suit).to.equal(@"♥️");
+            expect(myValidPlayingCard.suit).to.equal(@"♥");
         });
         it(@"invalid suits should return an empty string",^{
             expect(myInvalidPlayingCard.suit).to.equal(@"");
@@ -121,20 +121,13 @@ describe(@"PlayingCard", ^{
         });
         
         it(@"valid suits should return a valid suit",^{
-            myValidPlayingCard.suit = @"♥️";
-            expect(myValidPlayingCard.suit).to.equal(@"♥️");
+            myValidPlayingCard.suit = @"♥";
+            expect(myValidPlayingCard.suit).to.equal(@"♥");
         });
         
         it(@"invalid suits should return an empty string",^{
             myInvalidPlayingCard.suit = @"X";
             expect(myInvalidPlayingCard.suit).to.equal(@"");
-        });
-    });
-    
-    describe(@"isFaceUp", ^{
-        it(@"isFaceUp to return the set value",^{
-            myCard.faceUp = YES;
-            expect(myCard.isFaceUp).to.beTruthy();
         });
     });
 });
