@@ -34,7 +34,7 @@ Object Oriented Cards
 4.    Let's refactor our code to be more re-usable by creating a fourth class called `BaseballPlayer`.
 	  * Move all of the properties related to a baseball player out of the `BaseballCard` class and into your newly created `BaseballPlayer` class. 
 	  * *Don't forget to make the `BaseballPlayer`'s properties public!* Make sure they're in the class's `@interface` in its .h file.
-	  * Create a property of type `BaseballPlayer` in the `BaseballCard` class. [*Pro-tip: if the compiler is complaining, you likely forgot to `#import BaseballPlayer.h;`*]
+	  * Create a property of type `BaseballPlayer` in the `BaseballCard` class. [*Pro-tip: if the compiler is complaining, you likely forgot to `#import "BaseballPlayer.h";`*]
 
 5.    Override the `description` method for `PlayingCard` and `BaseballCard` classes.  
       * for `PlayingCard`: 
@@ -47,14 +47,9 @@ Object Oriented Cards
 
 7.    Print the `description` of your `BaseballCard`s and `PlayingCard`s to the console using `NSLog`.
 
-**Be sure to run the tests too!.**
+**Be sure to run the tests too!**
 
 ### Extra Credit
 
 1. Add designated initializers to `PlayingCard`, `BaseballPlayer` and `BaseballCard` classes, and refactor your initializations (in `didFinishLaunchingWithOptions`) to use your new designated initializers.
-2.  In the playing card class add 2 private methods, 
-    - `(BOOL)validRank:(NSNumber *)rank` 
-    and 
-    - `(BOOL)validSuit:(NSString *)suit`
-3. Implement `validRank` and `validSuit` such that it is impossible to return any rank not between 1-13 or any suit besides (ASCII hearts, spades, clubs, or diamonds)  
-4. Create methods in the `BaseballPlayer` class that return weight in KG (`NSNumber`) and height in feet and inches (`NSString`)
+2. Create methods in the `BaseballPlayer` class that return weight in KG (`NSNumber`) and height in feet and inches (`NSString`)
