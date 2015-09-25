@@ -20,7 +20,7 @@ describe(@"FISBaseballCard", ^{
     
     beforeAll(^{
         baseballPlayer = [[FISBaseballPlayer alloc] init];
-        baseballCard = [[FISBaseballCard alloc] initWithBaseballPlayer:baseballPlayer teamName:@"Flatiron School" brand:@"New Era" cardNumber:@1272];
+        baseballCard = [[FISBaseballCard alloc] initWithBaseballPlayer:baseballPlayer teamName:@"Flatiron School" brand:@"New Era" cardNumber:1272];
     });
     
     it(@"exists", ^{
@@ -46,7 +46,7 @@ describe(@"FISBaseballCard", ^{
         });
         
         it(@"brand should be correct",^{
-            expect(baseballCard.cardNumber).to.equal(@1272);
+            expect(baseballCard.cardNumber).to.equal(1272);
         });
     });
     
@@ -57,9 +57,9 @@ describe(@"FISBaseballCard", ^{
         });
         
         it(@"should have a default baseball player value",^{
-            expect(defaultBaseballCard.player.weight).to.equal(@0);
-            expect(defaultBaseballCard.player.number).to.equal(@0);
-            expect(defaultBaseballCard.player.height).to.equal(@0);
+            expect(defaultBaseballCard.player.weight).to.equal(0);
+            expect(defaultBaseballCard.player.number).to.equal(0);
+            expect(defaultBaseballCard.player.height).to.equal(0);
             expect(defaultBaseballCard.player.firstName).to.equal(@"");
             expect(defaultBaseballCard.player.lastName).to.equal(@"");
         });
@@ -73,7 +73,7 @@ describe(@"FISBaseballCard", ^{
         });
         
         it(@"should have a default number",^{
-            expect(defaultBaseballCard.cardNumber).to.equal(@0);
+            expect(defaultBaseballCard.cardNumber).to.equal(0);
         });
     });
     
@@ -102,7 +102,7 @@ describe(@"FISBaseballCard", ^{
         });
         
         it(@"should have the card number I set it to",^{
-            card.cardNumber = @2520;
+            card.cardNumber = 2520;
         });
         
         it(@"should have the baseball player I set it to",^{

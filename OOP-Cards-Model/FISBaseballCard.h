@@ -14,11 +14,11 @@
 @property (strong, nonatomic) FISBaseballPlayer *player;
 @property (strong, nonatomic) NSString *teamName;
 @property (strong, nonatomic) NSString *brand;
-@property (strong, nonatomic) NSNumber *cardNumber;
+@property (nonatomic) NSInteger cardNumber;
 
 -(instancetype)initWithBaseballPlayer:(FISBaseballPlayer *)player
                              teamName:(NSString *)teamName
                                 brand:(NSString *)brandName
-                           cardNumber:(NSNumber *)cardNumber;
+                           cardNumber:(NSInteger)cardNumber;
 
 @end

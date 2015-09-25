@@ -10,7 +10,7 @@
 
 @implementation FISBaseballCard
 
--(instancetype)initWithBaseballPlayer:(FISBaseballPlayer *)player teamName:(NSString *)teamName brand:(NSString *)brandName cardNumber:(NSNumber *)cardNumber
+-(instancetype)initWithBaseballPlayer:(FISBaseballPlayer *)player teamName:(NSString *)teamName brand:(NSString *)brandName cardNumber:(NSInteger)cardNumber
 {
     self = [super init];
     if (self) {
@@ -24,11 +24,11 @@
 
 -(instancetype)init
 {
-    return [self initWithBaseballPlayer:[[FISBaseballPlayer alloc] init] teamName:@"" brand:@"" cardNumber:@0];
+    return [self initWithBaseballPlayer:[[FISBaseballPlayer alloc] init] teamName:@"" brand:@"" cardNumber:0];
 }
 
 -(NSString *)description
 {
-    return [NSString stringWithFormat:@"Player name:%@ Team name:%@ Brand:%@ Card Number:%@", self.player.firstName, self.teamName, self.brand, self.cardNumber];
+    return [NSString stringWithFormat:@"Player name:%@ Team name:%@ Brand:%@ Card Number:%ld", self.player.firstName, self.teamName, self.brand, self.cardNumber];
 }
 @end

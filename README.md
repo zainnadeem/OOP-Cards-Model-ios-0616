@@ -13,11 +13,13 @@ Object Oriented Cards
 1. Create three classes: **Card**, **PlayingCard**, and **BaseballCard**. `Card` will be our base class, and should inherit from `NSObject`.  `PlayingCard` and `BaseballCard` should each inherit from `Card`. (*Shortcut-time! Hit cmd+N, then select 'Cocoa Touch Class'*)
 
 2. Cards have many distinguishing characteristics or (hint) *properties*. Flesh out your classes using this list. Think about which ones belong to all `Card`s, which belong to a `PlayingCard`, and which belong to a `BaseballCard`.  
-    *  **playerWeight** (Integer) - The player's weight in pounds
+
+    **For number-based properties, use either `NSInteger` or `CGFloat`**
+    *  **playerWeight** (Float) - The player's weight in pounds
     *  **suit** (String) - The card's suit
     *  **playerNumber** (Integer) - The player's number 
     *  **rank** (Integer) - The cards rank.  ex. 4 of clubs has a rank of 4  
-    *  **playerHeight** (Integer) - The player's height in inches
+    *  **playerHeight** (Float) - The player's height in inches
     *  **teamName** (String) - The player's team's name
     *  **cardNumber** (Integer) - The card's production number ie. 279 
     *  **playerFirstName** (String) - The first name of the player on the card 
@@ -49,4 +51,4 @@ Object Oriented Cards
 ### Extra Credit
 
 1. Add designated initializers to `PlayingCard`, `BaseballPlayer` and `BaseballCard` classes, and refactor your initializations (in `didFinishLaunchingWithOptions`) to use your new designated initializers.
-2. Create methods in the `BaseballPlayer` class that return weight in KG (`NSNumber`) and height in feet and inches (`NSString`)
+2. Create methods in the `BaseballPlayer` class that return weight in KG (`CGFloat`) and height in feet and inches (`NSString`)

@@ -11,7 +11,6 @@
 @interface FISCard : NSObject
 
 @property (nonatomic, getter=isFaceUp) BOOL faceUp;
-@property (nonatomic) CGRect frame;
 
 - (NSString *)description;
 - (void)flipCard;

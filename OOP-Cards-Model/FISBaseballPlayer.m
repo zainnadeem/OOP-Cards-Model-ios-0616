@@ -10,7 +10,7 @@
 
 @implementation FISBaseballPlayer
 
-- (instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName weight:(NSNumber *)weight number:(NSNumber *)number height:(NSNumber *)height
+- (instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName weight:(CGFloat)weight number:(NSInteger)number height:(CGFloat)height
 {
     self = [super init];
     if (self) {
@@ -25,11 +25,11 @@
 
 -(instancetype)init
 {
-    return [self initWithFirstName:@"" lastName:@"" weight:@0 number:@0 height:@0];
+    return [self initWithFirstName:@"" lastName:@"" weight:0 number:0 height:0];
 }
 
-+(NSNumber *)convertLbsToKGsWithLbs:(NSNumber *)lbs
++(CGFloat)convertLbsToKGsWithLbs:(CGFloat)lbs
 {
-    return [NSNumber numberWithFloat: [lbs floatValue]/2.2046f];
+    return lbs/2.2046f;
 }
 @end

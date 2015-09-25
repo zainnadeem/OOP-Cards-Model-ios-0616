@@ -11,16 +11,16 @@
 @interface FISBaseballPlayer : NSObject
 @property (strong, nonatomic) NSString *firstName;
 @property (strong, nonatomic) NSString *lastName;
-@property (strong, nonatomic) NSNumber *weight;
-@property (strong, nonatomic) NSNumber *number;
-@property (strong, nonatomic) NSNumber *height;
+@property (nonatomic) CGFloat weight;
+@property (nonatomic) NSInteger number;
+@property (nonatomic) CGFloat height;
 
 -(instancetype)initWithFirstName:(NSString *)firstName
                         lastName:(NSString *)lastName
-                          weight:(NSNumber *)weight
-                          number:(NSNumber *)number
-                          height:(NSNumber *)height;
+                          weight:(CGFloat)weight
+                          number:(NSInteger)number
+                          height:(CGFloat)height;
 
-+(NSNumber *)convertLbsToKGsWithLbs:(NSNumber *)lbs;
++(CGFloat)convertLbsToKGsWithLbs:(CGFloat)lbs;
 
 @end

@@ -17,7 +17,7 @@ describe(@"FISBaseballPlayer", ^{
     __block FISBaseballPlayer *player;
     
     beforeEach(^{
-        player = [[FISBaseballPlayer alloc] initWithFirstName:@"Hank" lastName:@"Aaron" weight:@180 number:@44 height:@72];
+        player = [[FISBaseballPlayer alloc] initWithFirstName:@"Hank" lastName:@"Aaron" weight:180.0f number:44 height:72.0f];
     });
     
     describe(@"default initializer", ^{
@@ -28,15 +28,15 @@ describe(@"FISBaseballPlayer", ^{
         });
         
         it(@"should return the default weight",^{
-            expect(defaultPlayer.weight).to.equal(@0);
+            expect(defaultPlayer.weight).to.equal(0);
         });
         
         it(@"should return the default height",^{
-            expect(defaultPlayer.height).to.equal(@0);
+            expect(defaultPlayer.height).to.equal(0);
         });
         
         it(@"should return the default number",^{
-            expect(defaultPlayer.number).to.equal(@0);
+            expect(defaultPlayer.number).to.equal(0);
         });
         
         it(@"should return the default first name",^{
@@ -51,15 +51,15 @@ describe(@"FISBaseballPlayer", ^{
     describe(@"baseball player initializer", ^{
         
         it(@"should set weight to the correct value",^{
-            expect(player.weight).to.equal(@180);
+            expect(player.weight).to.equal(180);
         });
         
         it(@"should set height to the correct value",^{
-            expect(player.height).to.equal(@72);
+            expect(player.height).to.equal(72);
         });
         
         it(@"should set number to the correct value",^{
-            expect(player.number).to.equal(@44);
+            expect(player.number).to.equal(44);
         });
         
         it(@"should set first name to the correct value",^{
@@ -73,8 +73,8 @@ describe(@"FISBaseballPlayer", ^{
     
     describe(@"convertLbsToKGsWithLbs", ^{
         it(@"should perform a weight conversion and return the expected value",^{
-            NSNumber *kilos = @(roundf([[FISBaseballPlayer convertLbsToKGsWithLbs:@180] floatValue]));
-            expect(kilos).to.equal(@82);
+            CGFloat kilos = roundf([FISBaseballPlayer convertLbsToKGsWithLbs:180]);
+            expect(kilos).to.equal(82);
         });
     });
     
@@ -82,21 +82,21 @@ describe(@"FISBaseballPlayer", ^{
     
     describe(@"weight property", ^{
         it(@"weight should be what I set it to",^{
-            player.weight = @250;
-            expect(player.weight).to.equal(@250);
+            player.weight = 250;
+            expect(player.weight).to.equal(250);
         });
     });
     
     describe(@"number property", ^{
         it(@"number should be what I set it to",^{
-            player.number = @55;
-            expect(player.number).to.equal(@55);
+            player.number = 55;
+            expect(player.number).to.equal(55);
         });
      
     describe(@"height property", ^{
         it(@"height should be what I set it to",^{
-            player.height = @72;
-            expect(player.height).to.equal(@72);
+            player.height = 72;
+            expect(player.height).to.equal(72);
         });
     });
         

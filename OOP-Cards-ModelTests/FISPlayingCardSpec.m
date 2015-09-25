@@ -16,7 +16,7 @@ SpecBegin(FISPlayingCard)
 describe(@"FISPlayingCard", ^{
     __block FISPlayingCard *myCard;
     beforeEach(^{
-        myCard = [[FISPlayingCard alloc] initWithSuit:@"♠" rank:@5];
+        myCard = [[FISPlayingCard alloc] initWithSuit:@"♠" rank:5];
     });
     
     it(@"exists", ^{
@@ -29,7 +29,7 @@ describe(@"FISPlayingCard", ^{
         });
         
         it(@"should have a rank matching what I set it to",^{
-            expect(myCard.rank).to.equal(@5);
+            expect(myCard.rank).to.equal(5);
         });
     });
     
@@ -40,7 +40,7 @@ describe(@"FISPlayingCard", ^{
         });
         
         it(@"should set rank to 0 by default",^{
-            expect(defaultCard.rank).to.equal(@0);
+            expect(defaultCard.rank).to.equal(0);
         });
     });
     
@@ -53,22 +53,22 @@ describe(@"FISPlayingCard", ^{
     
     describe(@"setRank", ^{
         it(@"the rank should match the value I set",^{
-            myCard.rank = @10;
-            expect(myCard.rank).to.equal(@10);
+            myCard.rank = 10;
+            expect(myCard.rank).to.equal(10);
         });
     });
     
     describe(@"valid rank with designated initializer", ^{
         
-        FISPlayingCard *myValidPlayingCard = [[FISPlayingCard alloc] initWithSuit:@"♥" rank:@13];
-        FISPlayingCard *myInvalidPlayingCard = [[FISPlayingCard alloc] initWithSuit:@"♥" rank:@14];
+        FISPlayingCard *myValidPlayingCard = [[FISPlayingCard alloc] initWithSuit:@"♥" rank:13];
+        FISPlayingCard *myInvalidPlayingCard = [[FISPlayingCard alloc] initWithSuit:@"♥" rank:14];
 
         it(@"valid ranks should return the value as an NSNumber",^{
-            expect(myValidPlayingCard.rank).to.equal(@13);
+            expect(myValidPlayingCard.rank).to.equal(13);
         });
         
         it(@"invalid ranks should return 0 value",^{
-            expect(myInvalidPlayingCard.rank).to.equal(@0);
+            expect(myInvalidPlayingCard.rank).to.equal(0);
         });
     });
     
@@ -79,16 +79,16 @@ describe(@"FISPlayingCard", ^{
         beforeAll(^{
             myValidPlayingCard = [[FISPlayingCard alloc] init];
             myInvalidPlayingCard = [[FISPlayingCard alloc] init];
-            myValidPlayingCard.rank = @13;
-            myInvalidPlayingCard.rank = @14;
+            myValidPlayingCard.rank = 13;
+            myInvalidPlayingCard.rank = 14;
         });
         
         it(@"valid ranks should return value as NSNumber",^{
-            expect(myValidPlayingCard.rank).to.equal(@13);
+            expect(myValidPlayingCard.rank).to.equal(13);
         });
         
         it(@"invalid ranks should return 0 value",^{
-            expect(myInvalidPlayingCard.rank).to.equal(@0);
+            expect(myInvalidPlayingCard.rank).to.equal(0);
         });
     });
     
@@ -97,8 +97,8 @@ describe(@"FISPlayingCard", ^{
         __block FISPlayingCard *myInvalidPlayingCard;
         
         beforeAll(^{
-            myValidPlayingCard = [[FISPlayingCard alloc] initWithSuit:@"♥" rank:@13];
-            myInvalidPlayingCard = [[FISPlayingCard alloc] initWithSuit:@"X" rank:@14];
+            myValidPlayingCard = [[FISPlayingCard alloc] initWithSuit:@"♥" rank:13];
+            myInvalidPlayingCard = [[FISPlayingCard alloc] initWithSuit:@"X" rank:14];
         });
         
         it(@"valid suits should return suit",^{

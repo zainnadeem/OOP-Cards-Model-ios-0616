@@ -10,7 +10,7 @@
 
 @implementation FISPlayingCard
 
-- (instancetype)initWithSuit:(NSString *)suit rank:(NSNumber *)rank
+- (instancetype)initWithSuit:(NSString *)suit rank:(NSInteger)rank
 {
     self = [super init];
     if (self) {
@@ -22,13 +22,13 @@
 
 - (instancetype)init
 {
-    return [self initWithSuit:@"" rank:@0];
+    return [self initWithSuit:@"" rank:0];
 }
 
--(NSNumber *)rank
+-(NSInteger)rank
 {
-    if ([_rank intValue] > 13) {
-        _rank = @0;
+    if (_rank > 13) {
+        _rank = 0;
     }
     return _rank;
 }

@@ -11,8 +11,8 @@
 
 @interface FISPlayingCard : FISCard
 @property (strong, nonatomic) NSString *suit;
-@property (strong, nonatomic) NSNumber *rank;
+@property (nonatomic) NSInteger rank;
 
--(instancetype)initWithSuit:(NSString *)suit rank:(NSNumber *)rank;
+-(instancetype)initWithSuit:(NSString *)suit rank:(NSInteger)rank;
 
 @end
