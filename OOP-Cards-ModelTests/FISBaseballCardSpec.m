@@ -23,40 +23,13 @@ describe(@"FISBaseballCard", ^{
         baseballCard = [[FISBaseballCard alloc] initWithBaseballPlayer:baseballPlayer teamName:@"Flatiron School" brand:@"New Era" cardNumber:1272];
     });
     
-    it(@"exists", ^{
-        expect(baseballCard).notTo.beNil();
-    });
-    
-    #pragma mark - test initializers
-    describe(@"baseball card designated initializer", ^{
-        it(@"baseball player of card should be equal to baseball player",^{
-            expect(baseballCard.player).to.equal(baseballPlayer);
-        });
-        
-        it(@"baseball card team should be correct",^{
-            expect(baseballCard.teamName).to.equal(@"Flatiron School");
-        });
-        
-        it(@"brand should be correct",^{
-            expect(baseballCard.brand).to.equal(@"New Era");
-        });
-        
-        it(@"brand should be correct",^{
-            expect(baseballCard.brand).to.equal(@"New Era");
-        });
-        
-        it(@"brand should be correct",^{
-            expect(baseballCard.cardNumber).to.equal(1272);
-        });
-    });
-    
-    describe(@"baseball card default init", ^{
+    describe(@"default init sets", ^{
         __block FISBaseballCard *defaultBaseballCard;
         beforeAll(^{
             defaultBaseballCard = [[FISBaseballCard alloc] init];
         });
         
-        it(@"should have a default baseball player value",^{
+        it(@"player to the default baseball player",^{
             expect(defaultBaseballCard.player.weight).to.equal(0);
             expect(defaultBaseballCard.player.number).to.equal(0);
             expect(defaultBaseballCard.player.height).to.equal(0);
@@ -64,55 +37,16 @@ describe(@"FISBaseballCard", ^{
             expect(defaultBaseballCard.player.lastName).to.equal(@"");
         });
         
-        it(@"should have a default team value",^{
+        it(@"teamName to empty string",^{
             expect(defaultBaseballCard.teamName).to.equal(@"");
         });
         
-        it(@"should have a default brand value",^{
+        it(@"brand to empty string",^{
             expect(defaultBaseballCard.brand).to.equal(@"");
         });
         
-        it(@"should have a default number",^{
+        it(@"cardNumber to 0",^{
             expect(defaultBaseballCard.cardNumber).to.equal(0);
-        });
-    });
-    
-    describe(@"baseball card description", ^{
-        it(@"returns the correct description",^{
-            NSString *description = baseballCard.description;
-            expect(description).to.equal(@"Player name: Team name:Flatiron School Brand:New Era Card Number:1272");
-        });
-    });
-    
-#pragma mark - test property getters/setters
-    describe(@"baseball card getters/setters", ^{
-        __block FISBaseballCard *card;
-        beforeAll(^{
-            card = [[FISBaseballCard alloc] init];
-        });
-        
-        it(@"should have the team name I set it to",^{
-            card.teamName = @"Braves";
-            expect(card.teamName).to.equal(@"Braves");
-        });
-        
-        it(@"should have the brand name I set it to",^{
-            card.brand = @"New Era";
-            expect(card.brand).to.equal(@"New Era");
-        });
-        
-        it(@"should have the card number I set it to",^{
-            card.cardNumber = 2520;
-        });
-        
-        it(@"should have the baseball player I set it to",^{
-            card.player = baseballPlayer;
-            expect(card.player).to.equal(baseballPlayer);
-        });
-        
-        it(@"should have the isFaceUp value I set it to",^{
-            card.faceUp = NO;
-            expect(card.isFaceUp).to.beFalsy();
         });
     });
 });

@@ -10,9 +10,4 @@
 
 @interface FISCard : NSObject
 
-@property (nonatomic, getter=isFaceUp) BOOL faceUp;
-
-- (NSString *)description;
-- (void)flipCard;
-
 @end

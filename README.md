@@ -29,10 +29,10 @@ Object Oriented Cards
 
     *Note: it's okay if your `FISCard` class seems a little bare — if applicable, having a basic parent class can be a good design choice because it can make future revisions easier.*
 
-3.    You may have noticed that many of our properties describe characteristics of a baseball player...  Imagine we have two different `BaseballCard`s that each feature the same baseball player. Instead of retyping all of the players information, wouldn't it be nice if we could reuse a player we've already entered? 
+3.    You may have noticed that many of our properties describe characteristics of a baseball player...  Imagine we have two different `FISBaseballCard`s that each feature the same baseball player. Instead of retyping all of the players information, wouldn't it be nice if we could reuse a player we've already entered? 
 
 4.    Let's refactor our code to be more re-usable by creating a fourth class called `FISBaseballPlayer`.
-	  * Move all of the properties related to a baseball player out of the `BaseballCard` class and into your newly created `BaseballPlayer` class. 
+	  * Move all of the properties related to a baseball player out of the `FISBaseballCard` class and into your newly created `FISBaseballPlayer` class. 
 	  * *Don't forget to make the `FISBaseballPlayer`'s properties public!* Make sure they're in the class's `@interface` in its .h file.
 	  * Create a property of type `FISBaseballPlayer` in the `FISBaseballCard` class. [*Pro-tip: if the compiler is complaining, you likely forgot to `#import "FISBaseballPlayer.h";`*]
 5.    Time to see them in action! Inside of `FISAppDelegate.m`'s `didFinishLaunchingWithOptions`, instantiate...
