@@ -10,8 +10,6 @@
 #import "Card.h"
 #define EXP_SHORTHAND
 #import "Expecta.h"
-#import "KIF.h"
-#import "Swizzlean.h"
 
 SpecBegin(Card)
 
