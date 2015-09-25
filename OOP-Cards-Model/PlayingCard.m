@@ -35,7 +35,7 @@
 
 -(NSString *)suit
 {
-    if (!([_suit isEqualToString:@"♥️"] || [_suit isEqualToString:@"♠️"] || [_suit isEqualToString:@"♣️"] || [_suit isEqualToString:@"♦️"])) {
+    if (!([_suit isEqualToString:@"♥"] || [_suit isEqualToString:@"♠"] || [_suit isEqualToString:@"♣"] || [_suit isEqualToString:@"♦"])) {
         _suit = @"";
     }
     return _suit;
