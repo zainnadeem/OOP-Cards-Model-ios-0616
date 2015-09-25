@@ -7,20 +7,20 @@
 //
 
 #import "Specta.h"
-#import "BaseballCard.h"
-#import "BaseballPlayer.h"
+#import "FISBaseballCard.h"
+#import "FISBaseballPlayer.h"
 #define EXP_SHORTHAND
 #import "Expecta.h"
 
-SpecBegin(BaseballCard)
+SpecBegin(FISBaseballCard)
 
-describe(@"BaseballCard", ^{
-    __block BaseballCard *baseballCard;
-    __block BaseballPlayer *baseballPlayer;
+describe(@"FISBaseballCard", ^{
+    __block FISBaseballCard *baseballCard;
+    __block FISBaseballPlayer *baseballPlayer;
     
     beforeAll(^{
-        baseballPlayer = [[BaseballPlayer alloc] init];
-        baseballCard = [[BaseballCard alloc] initWithBaseballPlayer:baseballPlayer teamName:@"Flatiron School" brand:@"New Era" cardNumber:@1272];
+        baseballPlayer = [[FISBaseballPlayer alloc] init];
+        baseballCard = [[FISBaseballCard alloc] initWithBaseballPlayer:baseballPlayer teamName:@"Flatiron School" brand:@"New Era" cardNumber:@1272];
     });
     
     it(@"exists", ^{
@@ -51,9 +51,9 @@ describe(@"BaseballCard", ^{
     });
     
     describe(@"baseball card default init", ^{
-        __block BaseballCard *defaultBaseballCard;
+        __block FISBaseballCard *defaultBaseballCard;
         beforeAll(^{
-            defaultBaseballCard = [[BaseballCard alloc] init];
+            defaultBaseballCard = [[FISBaseballCard alloc] init];
         });
         
         it(@"should have a default baseball player value",^{
@@ -86,9 +86,9 @@ describe(@"BaseballCard", ^{
     
 #pragma mark - test property getters/setters
     describe(@"baseball card getters/setters", ^{
-        __block BaseballCard *card;
+        __block FISBaseballCard *card;
         beforeAll(^{
-            card = [[BaseballCard alloc] init];
+            card = [[FISBaseballCard alloc] init];
         });
         
         it(@"should have the team name I set it to",^{

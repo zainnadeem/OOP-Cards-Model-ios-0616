@@ -7,24 +7,24 @@
 //
 
 #import "Specta.h"
-#import "BaseballPlayer.h"
+#import "FISBaseballPlayer.h"
 #define EXP_SHORTHAND
 #import "Expecta.h"
 
-SpecBegin(BaseballPlayer)
+SpecBegin(FISBaseballPlayer)
 
-describe(@"BaseballPlayer", ^{
-    __block BaseballPlayer *player;
+describe(@"FISBaseballPlayer", ^{
+    __block FISBaseballPlayer *player;
     
     beforeEach(^{
-        player = [[BaseballPlayer alloc] initWithFirstName:@"Hank" lastName:@"Aaron" weight:@180 number:@44 height:@72];
+        player = [[FISBaseballPlayer alloc] initWithFirstName:@"Hank" lastName:@"Aaron" weight:@180 number:@44 height:@72];
     });
     
     describe(@"default initializer", ^{
-        __block BaseballPlayer *defaultPlayer;
+        __block FISBaseballPlayer *defaultPlayer;
         
         beforeAll(^{
-            defaultPlayer = [[BaseballPlayer alloc] init];
+            defaultPlayer = [[FISBaseballPlayer alloc] init];
         });
         
         it(@"should return the default weight",^{
@@ -73,7 +73,7 @@ describe(@"BaseballPlayer", ^{
     
     describe(@"convertLbsToKGsWithLbs", ^{
         it(@"should perform a weight conversion and return the expected value",^{
-            NSNumber *kilos = @(roundf([[BaseballPlayer convertLbsToKGsWithLbs:@180] floatValue]));
+            NSNumber *kilos = @(roundf([[FISBaseballPlayer convertLbsToKGsWithLbs:@180] floatValue]));
             expect(kilos).to.equal(@82);
         });
     });

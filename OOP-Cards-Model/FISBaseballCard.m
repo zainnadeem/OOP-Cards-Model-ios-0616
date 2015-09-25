@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Al Tyus. All rights reserved.
 //
 
-#import "BaseballCard.h"
+#import "FISBaseballCard.h"
 
-@implementation BaseballCard
+@implementation FISBaseballCard
 
--(instancetype)initWithBaseballPlayer:(BaseballPlayer *)player teamName:(NSString *)teamName brand:(NSString *)brandName cardNumber:(NSNumber *)cardNumber
+-(instancetype)initWithBaseballPlayer:(FISBaseballPlayer *)player teamName:(NSString *)teamName brand:(NSString *)brandName cardNumber:(NSNumber *)cardNumber
 {
     self = [super init];
     if (self) {
@@ -24,7 +24,7 @@
 
 -(instancetype)init
 {
-    return [self initWithBaseballPlayer:[[BaseballPlayer alloc] init] teamName:@"" brand:@"" cardNumber:@0];
+    return [self initWithBaseballPlayer:[[FISBaseballPlayer alloc] init] teamName:@"" brand:@"" cardNumber:@0];
 }
 
 -(NSString *)description

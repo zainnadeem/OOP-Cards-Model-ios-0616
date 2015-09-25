@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Al Tyus. All rights reserved.
 //
 
-#import "BaseballPlayer.h"
+#import "FISBaseballPlayer.h"
 
-@implementation BaseballPlayer
+@implementation FISBaseballPlayer
 
 - (instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName weight:(NSNumber *)weight number:(NSNumber *)number height:(NSNumber *)height
 {

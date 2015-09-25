@@ -7,17 +7,17 @@
 //
 
 #import "Specta.h"
-#import "Card.h"
+#import "FISCard.h"
 #define EXP_SHORTHAND
 #import "Expecta.h"
 
-SpecBegin(Card)
+SpecBegin(FISCard)
 
-describe(@"Card", ^{
-    __block Card *card;
+describe(@"FISCard", ^{
+    __block FISCard *card;
     
     beforeAll(^{
-        card = [[Card alloc] init];
+        card = [[FISCard alloc] init];
     });
     
     it(@"exists", ^{

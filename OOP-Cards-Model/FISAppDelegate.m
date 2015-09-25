@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Al Tyus. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "FISAppDelegate.h"
 
-@implementation AppDelegate
+@implementation FISAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

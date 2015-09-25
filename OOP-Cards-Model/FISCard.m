@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Al Tyus. All rights reserved.
 //
 
-#import "Card.h"
+#import "FISCard.h"
 
-@implementation Card
+@implementation FISCard
 
 - (NSString *)description
 {

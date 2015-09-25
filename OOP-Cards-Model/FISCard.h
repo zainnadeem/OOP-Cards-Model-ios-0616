@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Card : NSObject
+@interface FISCard : NSObject
 
-@property (nonatomic, getter=isFaceUp) BOOL FaceUp;
+@property (nonatomic, getter=isFaceUp) BOOL faceUp;
 @property (nonatomic) CGRect frame;
 
 - (NSString *)description;

@@ -7,16 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BaseballPlayer.h"
-#import "Card.h"
+#import "FISBaseballPlayer.h"
+#import "FISCard.h"
 
-@interface BaseballCard : Card
-@property (strong, nonatomic) BaseballPlayer *player;
+@interface FISBaseballCard : FISCard
+@property (strong, nonatomic) FISBaseballPlayer *player;
 @property (strong, nonatomic) NSString *teamName;
 @property (strong, nonatomic) NSString *brand;
 @property (strong, nonatomic) NSNumber *cardNumber;
 
--(instancetype)initWithBaseballPlayer:(BaseballPlayer *)player
+-(instancetype)initWithBaseballPlayer:(FISBaseballPlayer *)player
                              teamName:(NSString *)teamName
                                 brand:(NSString *)brandName
                            cardNumber:(NSNumber *)cardNumber;
