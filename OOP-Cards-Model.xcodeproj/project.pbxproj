@@ -21,7 +21,6 @@
 		44CFDEB9189C389300238AA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44CFDEB7189C389300238AA4 /* InfoPlist.strings */; };
 		722736761948E278002A8E6A /* FISBaseballCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736721948E278002A8E6A /* FISBaseballCardSpec.m */; };
 		722736771948E278002A8E6A /* FISBaseballPlayerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736731948E278002A8E6A /* FISBaseballPlayerSpec.m */; };
-		722736781948E278002A8E6A /* FISCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736741948E278002A8E6A /* FISCardSpec.m */; };
 		722736791948E278002A8E6A /* FISPlayingCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736751948E278002A8E6A /* FISPlayingCardSpec.m */; };
 		7227368E1948EC1B002A8E6A /* FISBaseballCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736871948EC1B002A8E6A /* FISBaseballCard.m */; };
 		7227368F1948EC1B002A8E6A /* FISBaseballPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736891948EC1B002A8E6A /* FISBaseballPlayer.m */; };
@@ -60,7 +59,6 @@
 		4AE18893FF788BC760F5798D /* Pods-OOP-Cards-ModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OOP-Cards-ModelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OOP-Cards-ModelTests/Pods-OOP-Cards-ModelTests.release.xcconfig"; sourceTree = "<group>"; };
 		722736721948E278002A8E6A /* FISBaseballCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISBaseballCardSpec.m; sourceTree = "<group>"; };
 		722736731948E278002A8E6A /* FISBaseballPlayerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISBaseballPlayerSpec.m; sourceTree = "<group>"; };
-		722736741948E278002A8E6A /* FISCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCardSpec.m; sourceTree = "<group>"; };
 		722736751948E278002A8E6A /* FISPlayingCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISPlayingCardSpec.m; sourceTree = "<group>"; };
 		722736861948EC1B002A8E6A /* FISBaseballCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISBaseballCard.h; sourceTree = "<group>"; };
 		722736871948EC1B002A8E6A /* FISBaseballCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISBaseballCard.m; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 			children = (
 				722736721948E278002A8E6A /* FISBaseballCardSpec.m */,
 				722736731948E278002A8E6A /* FISBaseballPlayerSpec.m */,
-				722736741948E278002A8E6A /* FISCardSpec.m */,
 				722736751948E278002A8E6A /* FISPlayingCardSpec.m */,
 				44CFDEB5189C389300238AA4 /* Supporting Files */,
 			);
@@ -334,7 +331,6 @@
 			files = (
 				722736761948E278002A8E6A /* FISBaseballCardSpec.m in Sources */,
 				722736791948E278002A8E6A /* FISPlayingCardSpec.m in Sources */,
-				722736781948E278002A8E6A /* FISCardSpec.m in Sources */,
 				722736771948E278002A8E6A /* FISBaseballPlayerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
