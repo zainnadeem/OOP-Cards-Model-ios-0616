@@ -8,9 +8,11 @@
 
 ## Introduction
 
-Whenever we send objects to an `NSLog()` to be printed in the console, what that handy function actually does is read the `description` string property of that object. You won't see this property listed in the Apple Reference Docs for any of the classes that you're used to working with, however. This is because `description` is actually a property on `NSObject` which means that all objects in the Core Foundation inherit it. Many of them, such as `NSArray`, override it to customize how they answer the query.
-
 In this lab, you're going to get further practice subclassing from `NSObject` by creating a model of a playing card (`FISCard`) and a model of a playing card deck (`FISCardDeck`). While this assignment does little to use the functionality of the data models that you'll be setting up, this lab is a prerequisite for certain labs later in the course that will rely on these data models to create a card game (such as Blackjack).
+
+#### Overriding `description`
+
+Whenever we send objects to an `NSLog()` to be printed in the console, what that handy function actually does is read the `description` string property of that object. You won't see this property listed in the Apple Reference Docs for any of the classes that you're used to working with, however. This is because `description` is actually a property on `NSObject` which means that all objects in the Core Foundation inherit it. Many of them, such as `NSArray`, override it to customize how they answer the query. As a part of this lab, you'll do the same for your custom classes.
 
 ## Instructions 
 
@@ -48,19 +50,19 @@ Open the `OOP-Cards-Model.xcworkspace` file. You'll notice that the project is e
 1. Write the implementation for the `validSuits` class method to return an array containing the four unicode characters for card suits ( ♠ ♥ ♣ ♦ ) saved inside strings.
 
 2. Write the implementation for the `validRanks` class method to return an array containing a string representation of the thirteen card ranks from Ace to King.  
-**Hint:** *Use digits to represent the numbered cards and abbreviate the face cards to "A", "J", "Q", "K". In Blackjack, Ace is considered a low card.*
+**Hint:** *Use digits to represent the numbered cards and abbreviate the face cards to "A", "J", "Q", "K". In this implementation, the Ace should be ordered as a low card.*
 
 3. Before writing the initializers, declare two helper methods to be used for setting the `_cardLabel` and `_cardValue` ivars inside the initializer. Name them yourself, but think of descriptive names for them that will make it obvious what their uses are. Keep in mind that:
-  * the method for the label will need to return an `NSString`, and
-  * the method for the value will need to return an `NSUInteger`.
+  * the method for the card's label will need to return an `NSString`, and
+  * the method for the card's value will need to return an `NSUInteger`.
 
-4. The implementation for your label helper method should be pretty straightforward. It should interpolate the `suit` and `rank` properties together in such a way that the Queen of Spades will show `♥Q` and the Ten of Diamonds will show `♦10`. Return the interpolated string as the result of the method.
+4. The implementation for your card's label helper method should be pretty straightforward. It should interpolate the `suit` and `rank` properties together in such a way that the Queen of Spades will show `♥Q` and the Ten of Diamonds will show `♦10`. Return the interpolated string as the result of the method.
 
-5. The implementation for your value helper method will be a little more complex. It will need to return `1` for an Ace, the face value of the numbered cards (i.e. `2` for a Two and `10` for a Ten), and `10` for the face cards (Jack, Queen, and King).  
+5. The implementation for your card's value helper method will be a little more complex. It will need to return `1` for an Ace, the face value of the numbered cards (i.e. `2` for a Two and `10` for a Ten), and `10` for the face cards (i.e. Jack, Queen, and King).  
 **Hint:** *If the ranks are stored in an array, can you detect the index of a rank in that array? Then you could somehow use the index value to determine the card's value. Remember, if the Ace is first in the array, its index will be zero.*  
-**Advanced:** *The is a case where Enums are most appropriate to use, however we don't cover them in the curriculum so we've taken a different route.*
+**Advanced:** *This is a case where Enums are most appropriate to use, however we don't cover them in the curriculum so we've taken a different route.*
 
-6. Write the implementation for the designated initializer (you should have named it `initWithSuit:rank:`). Set the ivars for `_suit` and `_rank` to their associated arguments. Use your helper methods that you just wrote to set the ivars for `_cardLabel` and `_cardValue`. Your helper methods should keep your initializer's implementation looking crisp and clean. Tweak the logic in your helper methods until tests pass.
+6. Write the implementation for the designated initializer (you should have named it `initWithSuit:rank:`). Set the ivars for `_suit` and `_rank` to their associated arguments. Use your helper methods that you just wrote to set the ivars for `_cardLabel` and `_cardValue`. Your helper methods should keep your initializer's implementation looking crisp and clean. Tweak the logic in your helper methods until the tests pass.
 
 7. Override the default initializer `init` to call the designated initializer while passing in `@"!"` as the `suit` argument and `@"N"` as the `rank` argument.
 
@@ -84,10 +86,10 @@ Open the `OOP-Cards-Model.xcworkspace` file. You'll notice that the project is e
 5. You'll notice that there's a test which attempts to draw a fifty-third card from our fifty-two card deck. Add a protection against this behavior at the beginning of the `drawNextCard` method to `return nil` if there are no cards in the `remainingCards` array.  
 **Top-tip:** *Add an `NSLog()` along with this protection to print a message that the deck is empty.*
 
-6. Write the implementation for the `resetDeck` method to call the `gatherDealtCards` method and then the `shuffleRemainingCards` method. That's it, however the tests for `resetDeck` will fail until the other methods are completed.  
-**Advanced:** *This method is the intended interface for interacting with the deck. There is not "testable" option in Objective-C so the smaller methods must be made fully public in order to be visible to the tests.*
+6. Write the implementation for the `resetDeck` method to call the `gatherDealtCards` method and then the `shuffleRemainingCards` method. That's it, however the tests for `resetDeck` will fail until those other method implementations are completed.  
+**Advanced:** *This method is the intended interface for interacting with the deck. There is not a "testable" option in Objective-C so the smaller methods must be made fully public in order to be visible to the tests.*
 
-7. Write the implementation for the `gatherDealtCards` method. It should return the cards in the `dealtCards` array back to the `remainingCards` array and leave the `dealtCards` array empty.
+7. Write the implementation for the `gatherDealtCards` method. It should add the cards in the `dealtCards` array back into the `remainingCards` array and leave the `dealtCards` array empty.
 
 8. Write the implementation for the `shuffleRemainingCards` method. Randomizing a collection is a difficult challenge and there are several ways to approach it. One approach would be to take the following steps:
   * "pick up" the deck by making a `mutableCopy` of the `remainingCards` array and emptying the `remainingCards` array,
@@ -95,9 +97,9 @@ Open the `OOP-Cards-Model.xcworkspace` file. You'll notice that the project is e
   * randomly draw a card out of the copied mutable array and insert it into the `remainingCards` array (*make sure to remove it from the copied array*).  
 **Top-tip:** *To get a random integer, use the* `arc4random_uniform()` *C function which specifically takes a* `u_int32_t` *parameter. To silence the warning generated when passing it an* `NSUInteger` *variable, cast the* `NSUInteger` *variable as an* `unsigned int` *C primitive.*
 
-9. Override the `description` method to return a customized readout. You should begin by printing the count of the `remainingCards` array, and continue by appending the `card.description` of each card in the the `remainingCards` array.  
+9. Override the `description` method to return a customized readout. You should begin by printing the count of the `remainingCards` array, and continue by appending the `card.description` of each card in the `remainingCards` array.  
 **Hint:** *This is a great time to use an* `NSMutableString`.  
-**Hint:** *You can hardcode a newline character with `\n` and indentations with spaces.*  
+**Hint:** *You can hardcode a newline character with* `\n` *and indentations with spaces.*  
 Consider the following example when building your `description` method:
 
 ```
@@ -112,6 +114,6 @@ cards:
 
 Because of the randomization, the tests are only checking that it contains the substrings `@"count"` and `@"cards"`, so it's generally up to you to make this something useful.
 
-10 — Navigate to the `FISAppDelegate.m` file and import `FISCardDeck.h`. In the `application:didFinishLaunchingWithOptions:`, create a new `FISCardDeck` variable and `NSLog()` its description property. Play around with the methods you wrote, printing the description to watch the deck change.
+10 — Navigate to the `FISAppDelegate.m` file and import `FISCardDeck.h`. In the `application:didFinishLaunchingWithOptions:` method, create a new `FISCardDeck` variable and `NSLog()` its `description` property. Play around with the methods you wrote, printing the description to watch the deck change.
 
 **Advanced:** *Try playing a few draws of War with yourself if you like, but don't get bogged down in a thorough implementation of the game.*
