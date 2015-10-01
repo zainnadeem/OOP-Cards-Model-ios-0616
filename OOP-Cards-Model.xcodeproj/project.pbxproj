@@ -54,10 +54,10 @@
 		44CFDEB6189C389300238AA4 /* OOP-Cards-ModelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OOP-Cards-ModelTests-Info.plist"; sourceTree = "<group>"; };
 		44CFDEB8189C389300238AA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4AE18893FF788BC760F5798D /* Pods-OOP-Cards-ModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OOP-Cards-ModelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OOP-Cards-ModelTests/Pods-OOP-Cards-ModelTests.release.xcconfig"; sourceTree = "<group>"; };
-		4D3DF6221BBDA4DF0047AB5C /* FISCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FISCardDeck.h; path = "../../../09-LAB-OBJC-BLACKJACK/objc-BlackJack/BlackJack/FISCardDeck.h"; sourceTree = "<group>"; };
-		4D3DF6231BBDA4DF0047AB5C /* FISCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FISCardDeck.m; path = "../../../09-LAB-OBJC-BLACKJACK/objc-BlackJack/BlackJack/FISCardDeck.m"; sourceTree = "<group>"; };
-		4D3DF6251BBDA55E0047AB5C /* FISCardDeckSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FISCardDeckSpec.m; path = "../../../09-LAB-OBJC-BLACKJACK/objc-BlackJack/BlackJackTests/FISCardDeckSpec.m"; sourceTree = "<group>"; };
-		4D3DF6261BBDA55E0047AB5C /* FISCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FISCardSpec.m; path = "../../../09-LAB-OBJC-BLACKJACK/objc-BlackJack/BlackJackTests/FISCardSpec.m"; sourceTree = "<group>"; };
+		4D3DF6221BBDA4DF0047AB5C /* FISCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISCardDeck.h; sourceTree = "<group>"; };
+		4D3DF6231BBDA4DF0047AB5C /* FISCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCardDeck.m; sourceTree = "<group>"; };
+		4D3DF6251BBDA55E0047AB5C /* FISCardDeckSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCardDeckSpec.m; sourceTree = "<group>"; };
+		4D3DF6261BBDA55E0047AB5C /* FISCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCardSpec.m; sourceTree = "<group>"; };
 		7227368A1948EC1B002A8E6A /* FISCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISCard.h; sourceTree = "<group>"; };
 		7227368B1948EC1B002A8E6A /* FISCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
