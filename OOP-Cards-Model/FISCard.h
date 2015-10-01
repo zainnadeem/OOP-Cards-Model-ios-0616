@@ -1,13 +1,19 @@
-//
-//  Card.h
-//  OOP-Cards-Model
-//
-//  Created by Chris Gonzales on 6/10/14.
-//  Copyright (c) 2014 Al Tyus. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
+//  FISCard.h
 
 @interface FISCard : NSObject
+
++ (NSArray *)validSuits;
++ (NSArray *)validRanks;
+
+@property (strong, nonatomic) NSString *suit;
+@property (strong, nonatomic) NSString *rank;
+
+@property (strong, nonatomic, readonly) NSString *cardLabel;
+@property (nonatomic, readonly) NSUInteger cardValue;
+
+- (instancetype)init;
+
+- (instancetype)initWithSuit:(NSString *)suit
+                        rank:(NSString *)rank;
 
 @end

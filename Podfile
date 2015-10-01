@@ -7,5 +7,7 @@ end
 target "OOP-Cards-ModelTests" do
   pod 'Specta' 
   pod 'Expecta'
+  pod 'Expecta+Collections'
+
 end
 

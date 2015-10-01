@@ -19,13 +19,10 @@
 		44CFDEB0189C389300238AA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE95189C389300238AA4 /* Foundation.framework */; };
 		44CFDEB1189C389300238AA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE99189C389300238AA4 /* UIKit.framework */; };
 		44CFDEB9189C389300238AA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44CFDEB7189C389300238AA4 /* InfoPlist.strings */; };
-		722736761948E278002A8E6A /* FISBaseballCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736721948E278002A8E6A /* FISBaseballCardSpec.m */; };
-		722736771948E278002A8E6A /* FISBaseballPlayerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736731948E278002A8E6A /* FISBaseballPlayerSpec.m */; };
-		722736791948E278002A8E6A /* FISPlayingCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736751948E278002A8E6A /* FISPlayingCardSpec.m */; };
-		7227368E1948EC1B002A8E6A /* FISBaseballCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736871948EC1B002A8E6A /* FISBaseballCard.m */; };
-		7227368F1948EC1B002A8E6A /* FISBaseballPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736891948EC1B002A8E6A /* FISBaseballPlayer.m */; };
+		4D3DF6241BBDA4DF0047AB5C /* FISCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DF6231BBDA4DF0047AB5C /* FISCardDeck.m */; settings = {ASSET_TAGS = (); }; };
+		4D3DF6271BBDA55E0047AB5C /* FISCardDeckSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DF6251BBDA55E0047AB5C /* FISCardDeckSpec.m */; settings = {ASSET_TAGS = (); }; };
+		4D3DF6281BBDA55E0047AB5C /* FISCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DF6261BBDA55E0047AB5C /* FISCardSpec.m */; settings = {ASSET_TAGS = (); }; };
 		722736901948EC1B002A8E6A /* FISCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7227368B1948EC1B002A8E6A /* FISCard.m */; };
-		722736911948EC1B002A8E6A /* FISPlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7227368D1948EC1B002A8E6A /* FISPlayingCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,17 +54,12 @@
 		44CFDEB6189C389300238AA4 /* OOP-Cards-ModelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OOP-Cards-ModelTests-Info.plist"; sourceTree = "<group>"; };
 		44CFDEB8189C389300238AA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4AE18893FF788BC760F5798D /* Pods-OOP-Cards-ModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OOP-Cards-ModelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OOP-Cards-ModelTests/Pods-OOP-Cards-ModelTests.release.xcconfig"; sourceTree = "<group>"; };
-		722736721948E278002A8E6A /* FISBaseballCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISBaseballCardSpec.m; sourceTree = "<group>"; };
-		722736731948E278002A8E6A /* FISBaseballPlayerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISBaseballPlayerSpec.m; sourceTree = "<group>"; };
-		722736751948E278002A8E6A /* FISPlayingCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISPlayingCardSpec.m; sourceTree = "<group>"; };
-		722736861948EC1B002A8E6A /* FISBaseballCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISBaseballCard.h; sourceTree = "<group>"; };
-		722736871948EC1B002A8E6A /* FISBaseballCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISBaseballCard.m; sourceTree = "<group>"; };
-		722736881948EC1B002A8E6A /* FISBaseballPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISBaseballPlayer.h; sourceTree = "<group>"; };
-		722736891948EC1B002A8E6A /* FISBaseballPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISBaseballPlayer.m; sourceTree = "<group>"; };
+		4D3DF6221BBDA4DF0047AB5C /* FISCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FISCardDeck.h; path = "../../../09-LAB-OBJC-BLACKJACK/objc-BlackJack/BlackJack/FISCardDeck.h"; sourceTree = "<group>"; };
+		4D3DF6231BBDA4DF0047AB5C /* FISCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FISCardDeck.m; path = "../../../09-LAB-OBJC-BLACKJACK/objc-BlackJack/BlackJack/FISCardDeck.m"; sourceTree = "<group>"; };
+		4D3DF6251BBDA55E0047AB5C /* FISCardDeckSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FISCardDeckSpec.m; path = "../../../09-LAB-OBJC-BLACKJACK/objc-BlackJack/BlackJackTests/FISCardDeckSpec.m"; sourceTree = "<group>"; };
+		4D3DF6261BBDA55E0047AB5C /* FISCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FISCardSpec.m; path = "../../../09-LAB-OBJC-BLACKJACK/objc-BlackJack/BlackJackTests/FISCardSpec.m"; sourceTree = "<group>"; };
 		7227368A1948EC1B002A8E6A /* FISCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISCard.h; sourceTree = "<group>"; };
 		7227368B1948EC1B002A8E6A /* FISCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCard.m; sourceTree = "<group>"; };
-		7227368C1948EC1B002A8E6A /* FISPlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISPlayingCard.h; sourceTree = "<group>"; };
-		7227368D1948EC1B002A8E6A /* FISPlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISPlayingCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,16 +131,12 @@
 		44CFDE9B189C389300238AA4 /* OOP-Cards-Model */ = {
 			isa = PBXGroup;
 			children = (
-				722736861948EC1B002A8E6A /* FISBaseballCard.h */,
-				722736871948EC1B002A8E6A /* FISBaseballCard.m */,
-				722736881948EC1B002A8E6A /* FISBaseballPlayer.h */,
-				722736891948EC1B002A8E6A /* FISBaseballPlayer.m */,
-				7227368A1948EC1B002A8E6A /* FISCard.h */,
-				7227368B1948EC1B002A8E6A /* FISCard.m */,
-				7227368C1948EC1B002A8E6A /* FISPlayingCard.h */,
-				7227368D1948EC1B002A8E6A /* FISPlayingCard.m */,
 				44CFDEA4189C389300238AA4 /* FISAppDelegate.h */,
 				44CFDEA5189C389300238AA4 /* FISAppDelegate.m */,
+				4D3DF6221BBDA4DF0047AB5C /* FISCardDeck.h */,
+				4D3DF6231BBDA4DF0047AB5C /* FISCardDeck.m */,
+				7227368A1948EC1B002A8E6A /* FISCard.h */,
+				7227368B1948EC1B002A8E6A /* FISCard.m */,
 				44CFDEA7189C389300238AA4 /* Images.xcassets */,
 				44CFDE9C189C389300238AA4 /* Supporting Files */,
 			);
@@ -169,9 +157,8 @@
 		44CFDEB4189C389300238AA4 /* OOP-Cards-ModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				722736721948E278002A8E6A /* FISBaseballCardSpec.m */,
-				722736731948E278002A8E6A /* FISBaseballPlayerSpec.m */,
-				722736751948E278002A8E6A /* FISPlayingCardSpec.m */,
+				4D3DF6251BBDA55E0047AB5C /* FISCardDeckSpec.m */,
+				4D3DF6261BBDA55E0047AB5C /* FISCardSpec.m */,
 				44CFDEB5189C389300238AA4 /* Supporting Files */,
 			);
 			path = "OOP-Cards-ModelTests";
@@ -316,11 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				722736911948EC1B002A8E6A /* FISPlayingCard.m in Sources */,
 				722736901948EC1B002A8E6A /* FISCard.m in Sources */,
-				7227368E1948EC1B002A8E6A /* FISBaseballCard.m in Sources */,
+				4D3DF6241BBDA4DF0047AB5C /* FISCardDeck.m in Sources */,
 				44CFDEA6189C389300238AA4 /* FISAppDelegate.m in Sources */,
-				7227368F1948EC1B002A8E6A /* FISBaseballPlayer.m in Sources */,
 				44CFDEA2189C389300238AA4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,9 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				722736761948E278002A8E6A /* FISBaseballCardSpec.m in Sources */,
-				722736791948E278002A8E6A /* FISPlayingCardSpec.m in Sources */,
-				722736771948E278002A8E6A /* FISBaseballPlayerSpec.m in Sources */,
+				4D3DF6281BBDA55E0047AB5C /* FISCardSpec.m in Sources */,
+				4D3DF6271BBDA55E0047AB5C /* FISCardDeckSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -431,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -445,6 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OOP-Cards-Model/OOP-Cards-Model-Prefix.pch";
 				INFOPLIST_FILE = "OOP-Cards-Model/OOP-Cards-Model-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -458,6 +443,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OOP-Cards-Model/OOP-Cards-Model-Prefix.pch";
 				INFOPLIST_FILE = "OOP-Cards-Model/OOP-Cards-Model-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
