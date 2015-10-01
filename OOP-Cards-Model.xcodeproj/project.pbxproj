@@ -13,16 +13,14 @@
 		44CFDE9A189C389300238AA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE99189C389300238AA4 /* UIKit.framework */; };
 		44CFDEA0189C389300238AA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44CFDE9E189C389300238AA4 /* InfoPlist.strings */; };
 		44CFDEA2189C389300238AA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFDEA1189C389300238AA4 /* main.m */; };
-		44CFDEA6189C389300238AA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFDEA5189C389300238AA4 /* AppDelegate.m */; };
+		44CFDEA6189C389300238AA4 /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFDEA5189C389300238AA4 /* FISAppDelegate.m */; };
 		44CFDEA8189C389300238AA4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44CFDEA7189C389300238AA4 /* Images.xcassets */; };
 		44CFDEAF189C389300238AA4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDEAE189C389300238AA4 /* XCTest.framework */; };
 		44CFDEB0189C389300238AA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE95189C389300238AA4 /* Foundation.framework */; };
 		44CFDEB1189C389300238AA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE99189C389300238AA4 /* UIKit.framework */; };
 		44CFDEB9189C389300238AA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44CFDEB7189C389300238AA4 /* InfoPlist.strings */; };
-		722736761948E278002A8E6A /* BaseballCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736721948E278002A8E6A /* BaseballCardSpec.m */; };
-		722736771948E278002A8E6A /* BaseballPlayerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736731948E278002A8E6A /* BaseballPlayerSpec.m */; };
-		722736781948E278002A8E6A /* CardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736741948E278002A8E6A /* CardSpec.m */; };
-		722736791948E278002A8E6A /* PlayingCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736751948E278002A8E6A /* PlayingCardSpec.m */; };
+		4D3DF6271BBDA55E0047AB5C /* FISCardDeckSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DF6251BBDA55E0047AB5C /* FISCardDeckSpec.m */; settings = {ASSET_TAGS = (); }; };
+		4D3DF6281BBDA55E0047AB5C /* FISCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DF6261BBDA55E0047AB5C /* FISCardSpec.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,18 +44,16 @@
 		44CFDE9F189C389300238AA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44CFDEA1189C389300238AA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44CFDEA3189C389300238AA4 /* OOP-Cards-Model-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OOP-Cards-Model-Prefix.pch"; sourceTree = "<group>"; };
-		44CFDEA4189C389300238AA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		44CFDEA5189C389300238AA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		44CFDEA4189C389300238AA4 /* FISAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
+		44CFDEA5189C389300238AA4 /* FISAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
 		44CFDEA7189C389300238AA4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		44CFDEAD189C389300238AA4 /* OOP-Cards-ModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OOP-Cards-ModelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CFDEAE189C389300238AA4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		44CFDEB6189C389300238AA4 /* OOP-Cards-ModelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OOP-Cards-ModelTests-Info.plist"; sourceTree = "<group>"; };
 		44CFDEB8189C389300238AA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4AE18893FF788BC760F5798D /* Pods-OOP-Cards-ModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OOP-Cards-ModelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OOP-Cards-ModelTests/Pods-OOP-Cards-ModelTests.release.xcconfig"; sourceTree = "<group>"; };
-		722736721948E278002A8E6A /* BaseballCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballCardSpec.m; sourceTree = "<group>"; };
-		722736731948E278002A8E6A /* BaseballPlayerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballPlayerSpec.m; sourceTree = "<group>"; };
-		722736741948E278002A8E6A /* CardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardSpec.m; sourceTree = "<group>"; };
-		722736751948E278002A8E6A /* PlayingCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardSpec.m; sourceTree = "<group>"; };
+		4D3DF6251BBDA55E0047AB5C /* FISCardDeckSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCardDeckSpec.m; sourceTree = "<group>"; };
+		4D3DF6261BBDA55E0047AB5C /* FISCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCardSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +125,8 @@
 		44CFDE9B189C389300238AA4 /* OOP-Cards-Model */ = {
 			isa = PBXGroup;
 			children = (
-				44CFDEA4189C389300238AA4 /* AppDelegate.h */,
-				44CFDEA5189C389300238AA4 /* AppDelegate.m */,
+				44CFDEA4189C389300238AA4 /* FISAppDelegate.h */,
+				44CFDEA5189C389300238AA4 /* FISAppDelegate.m */,
 				44CFDEA7189C389300238AA4 /* Images.xcassets */,
 				44CFDE9C189C389300238AA4 /* Supporting Files */,
 			);
@@ -151,10 +147,8 @@
 		44CFDEB4189C389300238AA4 /* OOP-Cards-ModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				722736721948E278002A8E6A /* BaseballCardSpec.m */,
-				722736731948E278002A8E6A /* BaseballPlayerSpec.m */,
-				722736741948E278002A8E6A /* CardSpec.m */,
-				722736751948E278002A8E6A /* PlayingCardSpec.m */,
+				4D3DF6251BBDA55E0047AB5C /* FISCardDeckSpec.m */,
+				4D3DF6261BBDA55E0047AB5C /* FISCardSpec.m */,
 				44CFDEB5189C389300238AA4 /* Supporting Files */,
 			);
 			path = "OOP-Cards-ModelTests";
@@ -215,7 +209,7 @@
 		44CFDE8A189C389300238AA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Al Tyus";
 				TargetAttributes = {
 					44CFDEAC189C389300238AA4 = {
@@ -299,7 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44CFDEA6189C389300238AA4 /* AppDelegate.m in Sources */,
+				44CFDEA6189C389300238AA4 /* FISAppDelegate.m in Sources */,
 				44CFDEA2189C389300238AA4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,10 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				722736761948E278002A8E6A /* BaseballCardSpec.m in Sources */,
-				722736791948E278002A8E6A /* PlayingCardSpec.m in Sources */,
-				722736781948E278002A8E6A /* CardSpec.m in Sources */,
-				722736771948E278002A8E6A /* BaseballPlayerSpec.m in Sources */,
+				4D3DF6281BBDA55E0047AB5C /* FISCardSpec.m in Sources */,
+				4D3DF6271BBDA55E0047AB5C /* FISCardDeckSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +341,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -364,6 +355,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -378,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -388,7 +380,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -411,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -425,6 +416,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OOP-Cards-Model/OOP-Cards-Model-Prefix.pch";
 				INFOPLIST_FILE = "OOP-Cards-Model/OOP-Cards-Model-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -438,6 +431,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OOP-Cards-Model/OOP-Cards-Model-Prefix.pch";
 				INFOPLIST_FILE = "OOP-Cards-Model/OOP-Cards-Model-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -447,7 +442,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F92936DC853F56AA293AF18 /* Pods-OOP-Cards-ModelTests.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OOP-Cards-Model.app/OOP-Cards-Model";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -461,6 +455,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "OOP-Cards-ModelTests/OOP-Cards-ModelTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -471,7 +466,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AE18893FF788BC760F5798D /* Pods-OOP-Cards-ModelTests.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OOP-Cards-Model.app/OOP-Cards-Model";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -481,6 +475,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OOP-Cards-Model/OOP-Cards-Model-Prefix.pch";
 				INFOPLIST_FILE = "OOP-Cards-ModelTests/OOP-Cards-ModelTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
