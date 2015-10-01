@@ -1,64 +1,15 @@
-<<<<<<< HEAD
-
-
-Object Oriented Cards
-=======
-=======
 # OOP Cards Model
 
 ## Objectives 
->>>>>>> solution
 
 1. Model real-world objects by subclassing `NSObject`.
 2. Get more practice creating properties, methods, and initializers.
 3. Learn to override the `description` property for customized use in debugging.
 
-<<<<<<< HEAD
-* Solidify understanding of objects and object-oriented programming
-* Begin learning efficient class design via inheritance
-=======
 ## Introduction
->>>>>>> solution
 
 In this lab, you're going to get further practice subclassing from `NSObject` by creating a model of a playing card (`FISCard`) and a model of a playing card deck (`FISCardDeck`). While this assignment does little to use the functionality of the data models that you'll be setting up, this lab is a prerequisite for certain labs later in the course that will rely on these data models to create a card game (such as Blackjack).
 
-<<<<<<< HEAD
-1. Create three classes: **Card**, **PlayingCard**, and **BaseballCard**. `Card` will be our base class, and should inherit from `NSObject`.  `PlayingCard` and `BaseballCard` should each inherit from `Card`. (*Shortcut-time! Hit cmd+N, then select 'Cocoa Touch Class'*)
-
-2. Cards have many distinguishing characteristics or (hint) *properties*. Flesh out your classes using this list. Think about which ones belong to all `Card`s, which belong to a `PlayingCard`, and which belong to a `BaseballCard`.  
-    *  **playerWeight** (Integer) - The player's weight in pounds
-    *  **suit** (String) - The card's suit
-    *  **playerNumber** (Integer) - The player's number 
-    *  **rank** (Integer) - The cards rank.  ex. 4 of clubs has a rank of 4  
-    *  **playerHeight** (Integer) - The player's height in inches
-    *  **teamName** (String) - The player's team's name
-    *  **cardNumber** (Integer) - The card's production number ie. 279 
-    *  **playerFirstName** (String) - The first name of the player on the card 
-    *  **playerLastName** (String) - The last name of the player on the card
-    *  **brand** (String) - The brand of the card 
-
-    *Note: it's okay if your `Card` class seems a little bare — if applicable, having a basic parent class can be a good design choice because it can make future revisions easier.*
-
-3.    You may have noticed that many of our properties describe characteristics of a baseball player...  Imagine we have two different `BaseballCard`s that each feature the same baseball player. Instead of retyping all of the players information, wouldn't it be nice if we could reuse a player we've already entered? 
-
-4.    Let's refactor our code to be more re-usable by creating a fourth class called `BaseballPlayer`.
-	  * Move all of the properties related to a baseball player out of the `BaseballCard` class and into your newly created `BaseballPlayer` class. 
-	  * *Don't forget to make the `BaseballPlayer`'s properties public!* Make sure they're in the class's `@interface` in its .h file.
-	  * Create a property of type `BaseballPlayer` in the `BaseballCard` class. [*Pro-tip: if the compiler is complaining, you likely forgot to `#import "BaseballPlayer.h";`*]
-
-5.    Override the `description` method for `PlayingCard` and `BaseballCard` classes.  
-      * for `PlayingCard`: 
-      should return a string containing its `rank` and `suit` (copy/paste these ASCII representations for the suits: ♥  ♠  ♣  ♦).
-
-      * for `BaseballCard`: 
-      should return a string containing the players `firstName`, `lastName`, and `teamName`. 
-
-6.    Time to see them in action! Inside of `AppDelegate.m`'s `didFinishLaunchingWithOptions`, instantiate 3 `PlayingCard`s, 3 `baseballCard`s and 2 `BaseballPlayer`s.  2 of your `BaseballCard`s should share the same `BaseballPlayer`. 
-
-7.    Print the `description` of your `BaseballCard`s and `PlayingCard`s to the console using `NSLog`.
-
-**Be sure to run the tests too!**
-=======
 #### Overriding `description`
 
 Whenever we send objects to an `NSLog()` to be printed in the console, what that handy function actually does is read the `description` string property of that object. You won't see this property listed in the Apple Reference Docs for any of the classes that you're used to working with, however. This is because `description` is actually a property on `NSObject` which means that all objects in the Core Foundation inherit it. Many of them, such as `NSArray`, override it to customize how they answer the query. As a part of this lab, you'll do the same for your custom classes.
@@ -95,14 +46,9 @@ Open the `OOP-Cards-Model.xcworkspace` file. You'll notice that the project is e
 4. Define all of the declared methods to default implementations so that the test build will succeed. Run the testing suite to check its initial failures.
 
 #### II. Complete the `FISCard` Class
->>>>>>> solution
 
 1. Write the implementation for the `validSuits` class method to return an array containing the four unicode characters for card suits ( ♠ ♥ ♣ ♦ ) saved inside strings.
 
-<<<<<<< HEAD
-1. Add designated initializers to `PlayingCard`, `BaseballPlayer` and `BaseballCard` classes, and refactor your initializations (in `didFinishLaunchingWithOptions`) to use your new designated initializers.
-2. Create methods in the `BaseballPlayer` class that return weight in KG (`NSNumber`) and height in feet and inches (`NSString`)
-=======
 2. Write the implementation for the `validRanks` class method to return an array containing a string representation of the thirteen card ranks from Ace to King.  
 **Hint:** *Use digits to represent the numbered cards and abbreviate the face cards to "A", "J", "Q", "K". In this implementation, the Ace should be ordered as a low card.*
 
@@ -171,4 +117,3 @@ Because of the randomization, the tests are only checking that it contains the s
 10 — Navigate to the `FISAppDelegate.m` file and import `FISCardDeck.h`. In the `application:didFinishLaunchingWithOptions:` method, create a new `FISCardDeck` variable and `NSLog()` its `description` property. Play around with the methods you wrote, printing the description to watch the deck change.
 
 **Advanced:** *Try playing a few draws of War with yourself if you like, but don't get bogged down in a thorough implementation of the game.*
->>>>>>> solution
