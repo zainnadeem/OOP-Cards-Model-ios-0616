@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "641FD5DEDEB94195E97C4944DB777CF40D6E2963",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "641FD5DEDEB94195E97C4944DB777CF40D6E2963" : 0,
+    "74663A7B7EBA3A103285C19BBCA2617A8B951745" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "37100ED6-2F4E-4EEE-9EE5-E679E846B2A6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "641FD5DEDEB94195E97C4944DB777CF40D6E2963" : "OOP-Cards-Model",
+    "74663A7B7EBA3A103285C19BBCA2617A8B951745" : "..\/09-LAB-OBJC-BLACKJACK\/objc-BlackJack"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OOP-Cards-Model",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OOP-Cards-Model.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/github.com\/flatiron-school-curriculum\/OOP-Cards-Model.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "641FD5DEDEB94195E97C4944DB777CF40D6E2963"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:learn-co-curriculum\/objc-BlackJack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "74663A7B7EBA3A103285C19BBCA2617A8B951745"
+    }
+  ]
+}
