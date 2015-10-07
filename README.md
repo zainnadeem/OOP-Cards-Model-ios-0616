@@ -26,7 +26,7 @@ Open the `OOP-Cards-Model.xcworkspace` file. You'll notice that the project is e
   * two class methods,
      * `validSuits` which returns an `NSArray`, and
      * `validRanks` which returns an `NSArray`;
-  * four `readonly` properties (remember to make them privately `readwrite` in the `.m` file),
+  * four public `readonly` properties in the `.h` (remember to make them privately `readwrite` in the `.m` file, so we can change them in there),
      * an `NSString` property called `suit`,
      * an `NSString` property called `rank`,
      * an `NSString` property called `cardLabel`, and
