@@ -117,3 +117,5 @@ Because of the randomization, the tests are only checking that it contains the s
 10 — Navigate to the `FISAppDelegate.m` file and import `FISCardDeck.h`. In the `application:didFinishLaunchingWithOptions:` method, create a new `FISCardDeck` variable and `NSLog()` its `description` property. Play around with the methods you wrote, printing the description to watch the deck change.
 
 **Advanced:** *Try playing a few draws of War with yourself if you like, but don't get bogged down in a thorough implementation of the game.*
+
+<a href='https://learn.co/lessons/OOP-Cards-Model' data-visibility='hidden'>View this lesson on Learn.co</a>
