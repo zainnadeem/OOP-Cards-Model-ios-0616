@@ -118,4 +118,4 @@ Because of the randomization, the tests are only checking that it contains the s
 
 **Advanced:** *Try playing a few draws of War with yourself if you like, but don't get bogged down in a thorough implementation of the game.*
 
-<a href='https://learn.co/lessons/OOP-Cards-Model' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/OOP-Cards-Model' title='OOP Cards Model'>OOP Cards Model</a> on Learn.co and start learning to code for free.</p>
