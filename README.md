@@ -12,7 +12,7 @@ In this lab, you're going to get further practice subclassing from `NSObject` by
 
 #### Overriding `description`
 
-Whenever we send objects to an `NSLog()` to be printed in the console, what that handy function actually does is read the `description` string property of that object. You won't see this property listed in the Apple Reference Docs for any of the classes that you're used to working with, however. This is because `description` is actually a property on `NSObject` which means that all objects in the Core Foundation inherit it. Many of them, such as `NSArray`, override it to customize how they answer the query. As a part of this lab, you'll do the same for your custom classes.
+Whenever we send objects to an `NSLog()` to be printed in the console, what that handy function actually does is read the `description` string property of that object. You won't see this property listed in the Apple Reference Docs for any of the classes that you're used to working with, however. This is because `description` is actually a property on `NSObject` which means that almost all objects inherit it. Many of them, such as `NSArray`, override it to customize how they are logged. As a part of this lab, you'll do the same for your custom classes.
 
 ## Instructions 
 
@@ -23,7 +23,7 @@ Open the `OOP-Cards-Model.xcworkspace` file. You'll notice that the project is e
 1. Create the class files that the tests are expecting: `FISCard` and `FISCardDeck`.
 
 2. Prepare the `FISCard` class. It should have:
-  * two class methods,
+  * two **class** methods,
      * `validSuits` which returns an `NSArray`, and
      * `validRanks` which returns an `NSArray`;
   * four public `readonly` properties in the `.h` (remember to make them privately `readwrite` in the `.m` file, so we can change them in there),
@@ -47,22 +47,18 @@ Open the `OOP-Cards-Model.xcworkspace` file. You'll notice that the project is e
 
 #### II. Complete the `FISCard` Class
 
-1. Write the implementation for the `validSuits` class method to return an array containing the four unicode characters for card suits ( ♠ ♥ ♣ ♦ ) saved inside strings.
+1. Write the implementation for the `validSuits` class method to return an array containing the four unicode characters for card suits ( ♠ ♥ ♣ ♦ ) inside strings.
 
 2. Write the implementation for the `validRanks` class method to return an array containing a string representation of the thirteen card ranks from Ace to King.  
 **Hint:** *Use digits to represent the numbered cards and abbreviate the face cards to "A", "J", "Q", "K". In this implementation, the Ace should be ordered as a low card.*
 
-3. Before writing the initializers, declare two helper methods to be used for setting the `_cardLabel` and `_cardValue` ivars inside the initializer. Name them yourself, but think of descriptive names for them that will make it obvious what their uses are. Keep in mind that:
-  * the method for the card's label will need to return an `NSString`, and
-  * the method for the card's value will need to return an `NSUInteger`.
+6. Write the implementation for the designated initializer (you should have named it `initWithSuit:rank:`). Set the ivars for `_suit` and `_rank` to their associated arguments.
 
-4. The implementation for your card's label helper method should be pretty straightforward. It should interpolate the `suit` and `rank` properties together in such a way that the Queen of Spades will show `♥Q` and the Ten of Diamonds will show `♦10`. Return the interpolated string as the result of the method.
-
-5. The implementation for your card's value helper method will be a little more complex. It will need to return `1` for an Ace, the face value of the numbered cards (i.e. `2` for a Two and `10` for a Ten), and `10` for the face cards (i.e. Jack, Queen, and King).  
-**Hint:** *If the ranks are stored in an array, can you detect the index of a rank in that array? Then you could somehow use the index value to determine the card's value. Remember, if the Ace is first in the array, its index will be zero.*  
-**Advanced:** *This is a case where Enums are most appropriate to use, however we don't cover them in the curriculum so we've taken a different route.*
-
-6. Write the implementation for the designated initializer (you should have named it `initWithSuit:rank:`). Set the ivars for `_suit` and `_rank` to their associated arguments. Use your helper methods that you just wrote to set the ivars for `_cardLabel` and `_cardValue`. Your helper methods should keep your initializer's implementation looking crisp and clean. Tweak the logic in your helper methods until the tests pass.
+8. Assign `_cardLabel` and `_cardValue` in your initializer as follows:
+   - `_cardLabel` should include the `suit` and `rank` properties together in such a way that the Queen of Spades will show `♥Q` and the Ten of Diamonds will show `♦10`. 
+   - `_cardValue` will be a little more complex. It will need to be `1` for an Ace, the face value of the numbered cards (i.e. `2` for a Two and `10` for a Ten), and `10` for the face cards (i.e. Jack, Queen, and King).  
+   **Hint:** *If the ranks are stored in an array, can you detect the index of a rank in that array? Then you could somehow use the index value to determine the card's value. Remember, if the Ace is first in the array, its index will be zero.*  
+   **Advanced:** *This is a case where Enums are most appropriate to use, however we don't cover them in the curriculum so we've taken a different route.*
 
 7. Override the default initializer `init` to call the designated initializer while passing in `@"!"` as the `suit` argument and `@"N"` as the `rank` argument.
 
@@ -74,9 +70,9 @@ Open the `OOP-Cards-Model.xcworkspace` file. You'll notice that the project is e
 
 #### III. Complete the `FISCardDeck` Class
 
-1. Declare a private helper method that will be used to generate the fifty-two cards in a standard deck. Think of an appropriate name based on its intended behavior. Make it a `void` method and leave its implementation empty for now.
+1. To keep things organized, write a private method that will be used to generate the fifty-two cards in a standard deck. Think of an appropriate name based on its intended behavior. Make it a `void` method (it will assign directly to `remainingCards`) and leave its implementation empty for now.
 
-2. Overwrite the default initializer (`init`). Have it initialize the `_remainingCards` and `_dealtCards` ivars to new `NSMutableArray`s. At the end of the `if (self)` scope, insert a call to `self` of your card generator helper method that you just declared. Finish the rest of the initializer and run the tests to check that the array properties are getting initialized.
+2. Overwrite the default initializer (`init`). Have it initialize the `_remainingCards` and `_dealtCards` ivars to new `NSMutableArray`s. At the end of the `if (self)` block, insert a call to your card generator helper method that you just declared in step 1. Finish the rest of the initializer and run the tests to check that the array properties are getting initialized.
 
 3. Write the implementation for your card generator helper method. Think about how you can use the two arrays that you saved in the `FISCard` class methods `validSuits` and `validRanks` to dynamically create one unique card of each suit and rank combination. Add each card to the `remainingCards` array.  
 **Hint:** *You'll need to use a loop within a loop.*
@@ -95,9 +91,9 @@ Open the `OOP-Cards-Model.xcworkspace` file. You'll notice that the project is e
   * "pick up" the deck by making a `mutableCopy` of the `remainingCards` array and emptying the `remainingCards` array,
   * begin a loop limited by the total number of cards to be shuffled (*in most cases this will be fifty-two, but can you guarantee that?*),
   * randomly draw a card out of the copied mutable array and insert it into the `remainingCards` array (*make sure to remove it from the copied array*).  
-**Top-tip:** *To get a random integer, use the* `arc4random_uniform()` *C function which specifically takes a* `u_int32_t` *parameter. To silence the warning generated when passing it an* `NSUInteger` *variable, cast the* `NSUInteger` *variable as an* `unsigned int` *C primitive.*
+**Top-tip:** *To get a random integer, use the* `arc4random_uniform()` *C function which specifically takes a* `uint32_t` *parameter. To silence the warning generated when passing it an* `NSUInteger` *variable, cast the argument variable to an* `uint32_t`.
 
-9. Override the `description` method to return a customized readout. You should begin by printing the count of the `remainingCards` array, and continue by appending the `card.description` of each card in the `remainingCards` array.  
+9. Override the `description` method to return a customized string. You should return the count of the `remainingCards` array, and continue by appending the `card.description` of each card in the `remainingCards` array.  
 **Hint:** *This is a great time to use an* `NSMutableString`.  
 **Hint:** *You can hardcode a newline character with* `\n` *and indentations with spaces.*  
 Consider the following example when building your `description` method:
